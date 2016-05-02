@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd gh-pages/n2
+cd gh-pages/n2/doxygen/
 git rm -rf *
-cp -r ../../tmp_doc/* .
+cp -r ../../code/n2/doc/html ./
 git add *
 git commit * -m "replacing old docs with new"
 
