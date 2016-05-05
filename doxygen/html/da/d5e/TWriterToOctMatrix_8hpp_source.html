@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Исходный файл /home/tminnigaliev/tmp3/n2/code/n2/src/TWriterToOctMatrix.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TWriterToOctMatrix.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d5e/TWriterToOctMatrix_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _TWRITER_TO_OCT_MATRIX_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _TWRITER_TO_OCT_MATRIX_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/dd0/classIPort.html">IPort</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="../../df/ded/TBlock_8hpp.html">TBlock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="../../db/d92/TPortIn_8hpp.html">TPortIn.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/db1/Tcnexception_8hpp.html">Tcnexception.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d0/d1e/classTWriterToOctMatrix.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/d1e/classTWriterToOctMatrix.html">TWriterToOctMatrix</a>: <span class="keyword">public</span> <a class="code" href="../../db/d09/classTBlock.html">TBlock</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">//calculates all output ports for time t</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../d0/d1e/classTWriterToOctMatrix.html#a4679cfb3a1414181baa4e97b6e87a193">simulate</a>(int32_t t, int32_t ttl, <a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a> * port, std::string where);</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d0/d1e/classTWriterToOctMatrix.html#a5fe6a2ad526a9485f0d2f270e2a1e9ce">   25</a></span>&#160;                                <a class="code" href="../../d0/d1e/classTWriterToOctMatrix.html#a5fe6a2ad526a9485f0d2f270e2a1e9ce">TWriterToOctMatrix</a>(std::string sname, std::string fname, <a class="code" href="../../da/ded/classIData.html">IData</a>&amp; samp_value, std::string in=<span class="stringliteral">&quot;A&quot;</span>):</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                <a class="code" href="../../db/d09/classTBlock.html">TBlock</a>(sname),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                in(in),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                filename(fname),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                rows(0),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                cols(samp_value.get_dim(0)+1), <span class="comment">//value.get_dim(0)+1</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                value(samp_value.clone()){</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                        this-&gt;<a class="code" href="../../db/d09/classTBlock.html#acf49bf4eb66c5d0fd24f319f8cf452df">add_in_port</a>(in, samp_value, 0);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                        write_header(0,0);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                        clean_rows();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                };</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d0/d1e/classTWriterToOctMatrix.html#a103013cd64314e78e1d0e04a368e98e8">   36</a></span>&#160;        <span class="keyword">virtual</span>                 <a class="code" href="../../d0/d1e/classTWriterToOctMatrix.html#a103013cd64314e78e1d0e04a368e98e8">~TWriterToOctMatrix</a>(){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                        this-&gt;<a class="code" href="../../db/d09/classTBlock.html#a49fe0cf27a07dfe8c54609124fe941af">remove_port</a>(in);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                        <span class="keyword">delete</span> value;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="../../da/ded/classIData.html">IData</a>                   *value;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string             in;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string             filename;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">int</span>                     rows;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">int</span>                     cols;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            write_header(uint32_t rows, uint32_t cols);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            clean_rows();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            write_row(int32_t, <a class="code" href="../../da/ded/classIData.html">IData</a> *vector);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classTWriterToOctMatrix_html_a103013cd64314e78e1d0e04a368e98e8"><div class="ttname"><a href="../../d0/d1e/classTWriterToOctMatrix.html#a103013cd64314e78e1d0e04a368e98e8">TWriterToOctMatrix::~TWriterToOctMatrix</a></div><div class="ttdeci">virtual ~TWriterToOctMatrix()</div><div class="ttdef"><b>Definition:</b> TWriterToOctMatrix.hpp:36</div></div>
+<div class="ttc" id="classTPortOut_html"><div class="ttname"><a href="../../d9/d75/classTPortOut.html">TPortOut</a></div><div class="ttdoc">Класс выходного порта </div><div class="ttdef"><b>Definition:</b> TPortOut.hpp:13</div></div>
+<div class="ttc" id="Tcnexception_8hpp_html"><div class="ttname"><a href="../../db/db1/Tcnexception_8hpp.html">Tcnexception.hpp</a></div><div class="ttdoc">описание класса исключения, используемого в этом проекте </div></div>
+<div class="ttc" id="classIData_html"><div class="ttname"><a href="../../da/ded/classIData.html">IData</a></div><div class="ttdef"><b>Definition:</b> IData.hpp:7</div></div>
+<div class="ttc" id="classTWriterToOctMatrix_html_a4679cfb3a1414181baa4e97b6e87a193"><div class="ttname"><a href="../../d0/d1e/classTWriterToOctMatrix.html#a4679cfb3a1414181baa4e97b6e87a193">TWriterToOctMatrix::simulate</a></div><div class="ttdeci">virtual IData &amp; simulate(int32_t t, int32_t ttl, TPortOut *port, std::string where)</div><div class="ttdef"><b>Definition:</b> TWriterToOctMatrix.cpp:45</div></div>
+<div class="ttc" id="classTWriterToOctMatrix_html_a5fe6a2ad526a9485f0d2f270e2a1e9ce"><div class="ttname"><a href="../../d0/d1e/classTWriterToOctMatrix.html#a5fe6a2ad526a9485f0d2f270e2a1e9ce">TWriterToOctMatrix::TWriterToOctMatrix</a></div><div class="ttdeci">TWriterToOctMatrix(std::string sname, std::string fname, IData &amp;samp_value, std::string in=&quot;A&quot;)</div><div class="ttdef"><b>Definition:</b> TWriterToOctMatrix.hpp:25</div></div>
+<div class="ttc" id="classTWriterToOctMatrix_html"><div class="ttname"><a href="../../d0/d1e/classTWriterToOctMatrix.html">TWriterToOctMatrix</a></div><div class="ttdoc">записывает данные в матрицу в формате Октава. Кол-во столбцов у матрицы всегда на 1 больше чем количе...</div><div class="ttdef"><b>Definition:</b> TWriterToOctMatrix.hpp:21</div></div>
+<div class="ttc" id="classTBlock_html"><div class="ttname"><a href="../../db/d09/classTBlock.html">TBlock</a></div><div class="ttdoc">этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как пред...</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:60</div></div>
+<div class="ttc" id="classTBlock_html_a49fe0cf27a07dfe8c54609124fe941af"><div class="ttname"><a href="../../db/d09/classTBlock.html#a49fe0cf27a07dfe8c54609124fe941af">TBlock::remove_port</a></div><div class="ttdeci">virtual void remove_port(std::string name)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:41</div></div>
+<div class="ttc" id="TBlock_8hpp_html"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html">TBlock.hpp</a></div><div class="ttdoc">описание класса TBlock (может быть сложным блоком или предком простого блока) </div></div>
+<div class="ttc" id="classTBlock_html_acf49bf4eb66c5d0fd24f319f8cf452df"><div class="ttname"><a href="../../db/d09/classTBlock.html#acf49bf4eb66c5d0fd24f319f8cf452df">TBlock::add_in_port</a></div><div class="ttdeci">virtual TPortIn * add_in_port(std::string name, IData &amp;sample_value, int delay=0)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:14</div></div>
+<div class="ttc" id="TPortIn_8hpp_html"><div class="ttname"><a href="../../db/d92/TPortIn_8hpp.html">TPortIn.hpp</a></div></div>
+<div class="ttc" id="classIPort_html"><div class="ttname"><a href="../../d3/dd0/classIPort.html">IPort</a></div><div class="ttdoc">абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)...</div><div class="ttdef"><b>Definition:</b> IPort.hpp:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

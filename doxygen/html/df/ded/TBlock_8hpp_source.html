@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Исходный файл /home/tminnigaliev/tmp3/n2/code/n2/src/TBlock.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TBlock.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/ded/TBlock_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _TBLOCK_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _TBLOCK_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d4f/IPort_8hpp.html">IPort.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d6b/IBlock_8hpp.html">IBlock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d92/TPortIn_8hpp.html">TPortIn.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d15/TPortOut_8hpp.html">TPortOut.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">   16</a></span>&#160;<span class="keyword">typedef</span> std::list&lt;IBlock*&gt;              <a class="code" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">   17</a></span>&#160;<span class="keyword">typedef</span> std::map&lt;std::string, IPort*&gt;   <a class="code" href="../../df/ded/TBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#a27fc711f89368b1b61d0d8a01bfbe842">   18</a></span>&#160;<span class="keyword">typedef</span> std::map&lt;IPort*, std::string&gt;   <a class="code" href="../../df/ded/TBlock_8hpp.html#a27fc711f89368b1b61d0d8a01bfbe842">port_to_name_map_t</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">   19</a></span>&#160;<span class="keyword">typedef</span> std::map&lt;std::string, IBlock*&gt;  <a class="code" href="../../df/ded/TBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#af96aa07876afc23d5db972fdee4c2ed7">   20</a></span>&#160;<span class="keyword">typedef</span> std::map&lt;IBlock*, std::string&gt;  <a class="code" href="../../df/ded/TBlock_8hpp.html#af96aa07876afc23d5db972fdee4c2ed7">block_to_name_map_t</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a755f829dcfa1a52d1aef8a943ae2c0bd">   28</a></span>&#160;        <a class="code" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a755f829dcfa1a52d1aef8a943ae2c0bd">ACT_INPUTS_ASSIGN</a> = 0,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650adac3a06e8fc9509526c0586423cea509">   29</a></span>&#160;        <a class="code" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650adac3a06e8fc9509526c0586423cea509">ACT_OUTPUTS_ASSIGN</a> = 1,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a7c8940cdf830da30566e7e425c746e90">   34</a></span>&#160;        <a class="code" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a7c8940cdf830da30566e7e425c746e90">ACT_ONE_ONE_PIPELINE</a> = 2,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ac70f51840788743500175466673cae49">   39</a></span>&#160;        <a class="code" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ac70f51840788743500175466673cae49">ACT_SCATTER_DIMS_PIPELINE</a>= 3,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ab460bc3bea10dc341abd528a49934648">   44</a></span>&#160;        <a class="code" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ab460bc3bea10dc341abd528a49934648">ACT_SCATTER_PIPELINE</a> = 4,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}<a class="code" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">TAutoConnectingType</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * конструктор принимает в качестве параметров кол-во входных и выходных портов.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * операция соединения портов блоков одного ранга называется pipeline. При этой операции</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * соединяться должны всегда разнородные порты (выходной и входной).</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * операция соединения портов внешнего блока с портами внутренних блоков называется assign</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * соединяться должны всегда однородные порты (входной со входным, выходной с выходным) и</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * не должно быть никаких разветвлений.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../db/d09/classTBlock.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d09/classTBlock.html">TBlock</a> : <span class="keyword">public</span> <a class="code" href="../../d2/de8/classIBlock.html">IBlock</a>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">//calculates all output ports for time t</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../db/d09/classTBlock.html#a922d2903b0ffee6c03e9a59d4a994117">simulate</a>(int32_t t, int32_t ttl, <a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a> * port, std::string where);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../db/d09/classTBlock.html#ae56c3665118d43f87a256e89cfd67a11">simulate_port_name</a>(int32_t t, int32_t ttl, std::string port_name, std::string where);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../db/d09/classTBlock.html#add2f27ad22e3a1dee3ef4359a73c57a7">save_to_ptree</a>(boost::property_tree::ptree &amp;pt, std::string where);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../db/d09/classTBlock.html#af0d924d8dadba04ded62a9cbe5b21880">load_from_ptree</a>(boost::property_tree::ptree &amp;pt, std::string where);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d6/dd8/classTPortIn.html">TPortIn</a>*        <a class="code" href="../../db/d09/classTBlock.html#acf49bf4eb66c5d0fd24f319f8cf452df">add_in_port</a>(std::string name, <a class="code" href="../../da/ded/classIData.html">IData</a>&amp; sample_value, <span class="keywordtype">int</span> delay = 0);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a>*       <a class="code" href="../../db/d09/classTBlock.html#af421e0435ed4428b35b8297776a48d03">add_out_port</a>(std::string name, <a class="code" href="../../da/ded/classIData.html">IData</a>&amp; default_value = <a class="code" href="../../d9/d75/classTPortOut.html#a85dd64b88604f351e083b58a5a38ef23">TPortOut::std_default_value</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../db/d09/classTBlock.html#a49fe0cf27a07dfe8c54609124fe941af">remove_port</a>(std::string name);</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../db/d09/classTBlock.html#a7ed8d56631b29c9c44ccd886f69d4600">   71</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a>&amp; <a class="code" href="../../db/d09/classTBlock.html#a7ed8d56631b29c9c44ccd886f69d4600">get_in_ports_list</a>(){<span class="keywordflow">return</span> *in_ports;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../db/d09/classTBlock.html#a0ebc1b898a9a5b7e297b8cad319d8d39">   72</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a>&amp;<a class="code" href="../../db/d09/classTBlock.html#a0ebc1b898a9a5b7e297b8cad319d8d39">get_out_ports_list</a>(){<span class="keywordflow">return</span> *out_ports;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d6/dd8/classTPortIn.html">TPortIn</a>         *<a class="code" href="../../db/d09/classTBlock.html#aa4b51d060c3ca238252d4d5e944a91e5">get_in_port</a>(std::string name);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a>        *<a class="code" href="../../db/d09/classTBlock.html#a83453da1e8fd3797fd6448a014c7d6aa">get_out_port</a>(std::string name);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../db/d09/classTBlock.html#a4cc0029be5235bf2dbe9f51d17aa95b8">add_subblock</a>(<a class="code" href="../../d2/de8/classIBlock.html">IBlock</a> *subblock, std::string name);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../db/d09/classTBlock.html#a21af2c545128de1e14d8f18652931bce">connect_subblock</a>(std::string name, <a class="code" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">TAutoConnectingType</a> type);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../db/d09/classTBlock.html#a55aef960c943b985b1d11b5f5b6e6f52">remove_block</a>(<a class="code" href="../../d2/de8/classIBlock.html">IBlock</a> *subblock);</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../db/d09/classTBlock.html#a0280ee43a61d7d09847d0ba46d4d7142">   80</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a>&amp;<a class="code" href="../../db/d09/classTBlock.html#a0280ee43a61d7d09847d0ba46d4d7142">get_subblock_list</a>(){<span class="keywordflow">return</span> *subblocks;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../db/d09/classTBlock.html#aee68481c7c937502aeefbdc7a2b2312f">   81</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d2/de8/classIBlock.html">IBlock</a>  *<a class="code" href="../../db/d09/classTBlock.html#aee68481c7c937502aeefbdc7a2b2312f">get_subblock_by_name</a>(std::string name){<span class="keywordflow">return</span> (*str_to_block)[name];};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                <a class="code" href="../../db/d09/classTBlock.html#addf65747497453186afd2c83159b19d6">TBlock</a>(std::string sname);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">virtual</span>                 <a class="code" href="../../db/d09/classTBlock.html#a97eb02aeb0bcca6cc7a834ef2ba7eece">~TBlock</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a>          *in_ports;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a>          *free_in_subports;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a>         *out_ports;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a>         *free_out_subports;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a>      *str_to_port;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a>         *subblocks;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="../../d1/d6b/IBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a>     *str_to_block;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            connect_subblock_inputs_assign(std::string name);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            connect_subblock_outputs_assign(std::string name);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            connect_subblock_pipeline(std::string name, <span class="keywordtype">bool</span> connect_first, <span class="keywordtype">bool</span> match_names);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="ttc" id="IBlock_8hpp_html"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html">IBlock.hpp</a></div><div class="ttdoc">описание интерфейса (абстрактного класса) IBlock. </div></div>
+<div class="ttc" id="TBlock_8hpp_html_ae98967e69d065b0a74c2e49d00f5a650a755f829dcfa1a52d1aef8a943ae2c0bd"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a755f829dcfa1a52d1aef8a943ae2c0bd">ACT_INPUTS_ASSIGN</a></div><div class="ttdef"><b>Definition:</b> TBlock.hpp:28</div></div>
+<div class="ttc" id="classTBlock_html_addf65747497453186afd2c83159b19d6"><div class="ttname"><a href="../../db/d09/classTBlock.html#addf65747497453186afd2c83159b19d6">TBlock::TBlock</a></div><div class="ttdeci">TBlock(std::string sname)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:333</div></div>
+<div class="ttc" id="classTBlock_html_a83453da1e8fd3797fd6448a014c7d6aa"><div class="ttname"><a href="../../db/d09/classTBlock.html#a83453da1e8fd3797fd6448a014c7d6aa">TBlock::get_out_port</a></div><div class="ttdeci">virtual TPortOut * get_out_port(std::string name)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:285</div></div>
+<div class="ttc" id="IBlock_8hpp_html_a1ceda2cbf4054de0285bca8f8a331900"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a></div><div class="ttdeci">std::list&lt; TPortOut * &gt; out_port_list_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:23</div></div>
+<div class="ttc" id="classTPortOut_html"><div class="ttname"><a href="../../d9/d75/classTPortOut.html">TPortOut</a></div><div class="ttdoc">Класс выходного порта </div><div class="ttdef"><b>Definition:</b> TPortOut.hpp:13</div></div>
+<div class="ttc" id="TBlock_8hpp_html_ae98967e69d065b0a74c2e49d00f5a650ac70f51840788743500175466673cae49"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ac70f51840788743500175466673cae49">ACT_SCATTER_DIMS_PIPELINE</a></div><div class="ttdef"><b>Definition:</b> TBlock.hpp:39</div></div>
+<div class="ttc" id="classTBlock_html_af421e0435ed4428b35b8297776a48d03"><div class="ttname"><a href="../../db/d09/classTBlock.html#af421e0435ed4428b35b8297776a48d03">TBlock::add_out_port</a></div><div class="ttdeci">virtual TPortOut * add_out_port(std::string name, IData &amp;default_value=TPortOut::std_default_value)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:28</div></div>
+<div class="ttc" id="TBlock_8hpp_html_a27fc711f89368b1b61d0d8a01bfbe842"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#a27fc711f89368b1b61d0d8a01bfbe842">port_to_name_map_t</a></div><div class="ttdeci">std::map&lt; IPort *, std::string &gt; port_to_name_map_t</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:18</div></div>
+<div class="ttc" id="classTBlock_html_a4cc0029be5235bf2dbe9f51d17aa95b8"><div class="ttname"><a href="../../db/d09/classTBlock.html#a4cc0029be5235bf2dbe9f51d17aa95b8">TBlock::add_subblock</a></div><div class="ttdeci">virtual void add_subblock(IBlock *subblock, std::string name)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:69</div></div>
+<div class="ttc" id="TBlock_8hpp_html_a2cd2248df693772a250b31dcf418b3c5"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a></div><div class="ttdeci">std::list&lt; IBlock * &gt; subblock_list_t</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:16</div></div>
+<div class="ttc" id="classTBlock_html_a0280ee43a61d7d09847d0ba46d4d7142"><div class="ttname"><a href="../../db/d09/classTBlock.html#a0280ee43a61d7d09847d0ba46d4d7142">TBlock::get_subblock_list</a></div><div class="ttdeci">virtual subblock_list_t &amp; get_subblock_list()</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:80</div></div>
+<div class="ttc" id="classTBlock_html_aee68481c7c937502aeefbdc7a2b2312f"><div class="ttname"><a href="../../db/d09/classTBlock.html#aee68481c7c937502aeefbdc7a2b2312f">TBlock::get_subblock_by_name</a></div><div class="ttdeci">virtual IBlock * get_subblock_by_name(std::string name)</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:81</div></div>
+<div class="ttc" id="classIData_html"><div class="ttname"><a href="../../da/ded/classIData.html">IData</a></div><div class="ttdef"><b>Definition:</b> IData.hpp:7</div></div>
+<div class="ttc" id="TPortOut_8hpp_html"><div class="ttname"><a href="../../d1/d15/TPortOut_8hpp.html">TPortOut.hpp</a></div></div>
+<div class="ttc" id="TBlock_8hpp_html_a9c41a8196c0e4cbdeaa509647d68da76"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a></div><div class="ttdeci">std::map&lt; std::string, IPort * &gt; name_to_port_map_t</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:17</div></div>
+<div class="ttc" id="classTBlock_html_a21af2c545128de1e14d8f18652931bce"><div class="ttname"><a href="../../db/d09/classTBlock.html#a21af2c545128de1e14d8f18652931bce">TBlock::connect_subblock</a></div><div class="ttdeci">virtual void connect_subblock(std::string name, TAutoConnectingType type)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:230</div></div>
+<div class="ttc" id="classTBlock_html_a97eb02aeb0bcca6cc7a834ef2ba7eece"><div class="ttname"><a href="../../db/d09/classTBlock.html#a97eb02aeb0bcca6cc7a834ef2ba7eece">TBlock::~TBlock</a></div><div class="ttdeci">virtual ~TBlock()</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:344</div></div>
+<div class="ttc" id="classIBlock_html"><div class="ttname"><a href="../../d2/de8/classIBlock.html">IBlock</a></div><div class="ttdoc">абстрактный предок всех блоков. </div><div class="ttdef"><b>Definition:</b> IBlock.hpp:39</div></div>
+<div class="ttc" id="TBlock_8hpp_html_ae98967e69d065b0a74c2e49d00f5a650a7c8940cdf830da30566e7e425c746e90"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a7c8940cdf830da30566e7e425c746e90">ACT_ONE_ONE_PIPELINE</a></div><div class="ttdef"><b>Definition:</b> TBlock.hpp:34</div></div>
+<div class="ttc" id="TBlock_8hpp_html_ae98967e69d065b0a74c2e49d00f5a650adac3a06e8fc9509526c0586423cea509"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650adac3a06e8fc9509526c0586423cea509">ACT_OUTPUTS_ASSIGN</a></div><div class="ttdef"><b>Definition:</b> TBlock.hpp:29</div></div>
+<div class="ttc" id="IBlock_8hpp_html_a9c41a8196c0e4cbdeaa509647d68da76"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a></div><div class="ttdeci">std::map&lt; std::string, IPort * &gt; name_to_port_map_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:24</div></div>
+<div class="ttc" id="classTPortOut_html_a85dd64b88604f351e083b58a5a38ef23"><div class="ttname"><a href="../../d9/d75/classTPortOut.html#a85dd64b88604f351e083b58a5a38ef23">TPortOut::std_default_value</a></div><div class="ttdeci">static TData std_default_value</div><div class="ttdef"><b>Definition:</b> TPortOut.hpp:40</div></div>
+<div class="ttc" id="classTBlock_html_aa4b51d060c3ca238252d4d5e944a91e5"><div class="ttname"><a href="../../db/d09/classTBlock.html#aa4b51d060c3ca238252d4d5e944a91e5">TBlock::get_in_port</a></div><div class="ttdeci">virtual TPortIn * get_in_port(std::string name)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:276</div></div>
+<div class="ttc" id="classTBlock_html_add2f27ad22e3a1dee3ef4359a73c57a7"><div class="ttname"><a href="../../db/d09/classTBlock.html#add2f27ad22e3a1dee3ef4359a73c57a7">TBlock::save_to_ptree</a></div><div class="ttdeci">virtual void save_to_ptree(boost::property_tree::ptree &amp;pt, std::string where)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:313</div></div>
+<div class="ttc" id="classTBlock_html"><div class="ttname"><a href="../../db/d09/classTBlock.html">TBlock</a></div><div class="ttdoc">этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как пред...</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:60</div></div>
+<div class="ttc" id="classTBlock_html_a49fe0cf27a07dfe8c54609124fe941af"><div class="ttname"><a href="../../db/d09/classTBlock.html#a49fe0cf27a07dfe8c54609124fe941af">TBlock::remove_port</a></div><div class="ttdeci">virtual void remove_port(std::string name)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:41</div></div>
+<div class="ttc" id="classTBlock_html_a7ed8d56631b29c9c44ccd886f69d4600"><div class="ttname"><a href="../../db/d09/classTBlock.html#a7ed8d56631b29c9c44ccd886f69d4600">TBlock::get_in_ports_list</a></div><div class="ttdeci">virtual in_port_list_t &amp; get_in_ports_list()</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:71</div></div>
+<div class="ttc" id="classTBlock_html_a0ebc1b898a9a5b7e297b8cad319d8d39"><div class="ttname"><a href="../../db/d09/classTBlock.html#a0ebc1b898a9a5b7e297b8cad319d8d39">TBlock::get_out_ports_list</a></div><div class="ttdeci">virtual out_port_list_t &amp; get_out_ports_list()</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:72</div></div>
+<div class="ttc" id="classTBlock_html_ae56c3665118d43f87a256e89cfd67a11"><div class="ttname"><a href="../../db/d09/classTBlock.html#ae56c3665118d43f87a256e89cfd67a11">TBlock::simulate_port_name</a></div><div class="ttdeci">virtual IData &amp; simulate_port_name(int32_t t, int32_t ttl, std::string port_name, std::string where)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:307</div></div>
+<div class="ttc" id="classTBlock_html_af0d924d8dadba04ded62a9cbe5b21880"><div class="ttname"><a href="../../db/d09/classTBlock.html#af0d924d8dadba04ded62a9cbe5b21880">TBlock::load_from_ptree</a></div><div class="ttdeci">virtual void load_from_ptree(boost::property_tree::ptree &amp;pt, std::string where)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:323</div></div>
+<div class="ttc" id="IBlock_8hpp_html_aa2ceb085eec706bdbc38da83ea5a5988"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a></div><div class="ttdeci">std::map&lt; std::string, IBlock * &gt; name_to_block_map_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:25</div></div>
+<div class="ttc" id="TBlock_8hpp_html_ae98967e69d065b0a74c2e49d00f5a650"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">TAutoConnectingType</a></div><div class="ttdeci">TAutoConnectingType</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:24</div></div>
+<div class="ttc" id="classTBlock_html_a55aef960c943b985b1d11b5f5b6e6f52"><div class="ttname"><a href="../../db/d09/classTBlock.html#a55aef960c943b985b1d11b5f5b6e6f52">TBlock::remove_block</a></div><div class="ttdeci">virtual void remove_block(IBlock *subblock)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:255</div></div>
+<div class="ttc" id="TBlock_8hpp_html_aa2ceb085eec706bdbc38da83ea5a5988"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a></div><div class="ttdeci">std::map&lt; std::string, IBlock * &gt; name_to_block_map_t</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:19</div></div>
+<div class="ttc" id="classTBlock_html_acf49bf4eb66c5d0fd24f319f8cf452df"><div class="ttname"><a href="../../db/d09/classTBlock.html#acf49bf4eb66c5d0fd24f319f8cf452df">TBlock::add_in_port</a></div><div class="ttdeci">virtual TPortIn * add_in_port(std::string name, IData &amp;sample_value, int delay=0)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:14</div></div>
+<div class="ttc" id="classTPortIn_html"><div class="ttname"><a href="../../d6/dd8/classTPortIn.html">TPortIn</a></div><div class="ttdoc">Класс входного порта </div><div class="ttdef"><b>Definition:</b> TPortIn.hpp:17</div></div>
+<div class="ttc" id="TPortIn_8hpp_html"><div class="ttname"><a href="../../db/d92/TPortIn_8hpp.html">TPortIn.hpp</a></div></div>
+<div class="ttc" id="TBlock_8hpp_html_ae98967e69d065b0a74c2e49d00f5a650ab460bc3bea10dc341abd528a49934648"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ab460bc3bea10dc341abd528a49934648">ACT_SCATTER_PIPELINE</a></div><div class="ttdef"><b>Definition:</b> TBlock.hpp:44</div></div>
+<div class="ttc" id="TBlock_8hpp_html_af96aa07876afc23d5db972fdee4c2ed7"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html#af96aa07876afc23d5db972fdee4c2ed7">block_to_name_map_t</a></div><div class="ttdeci">std::map&lt; IBlock *, std::string &gt; block_to_name_map_t</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:20</div></div>
+<div class="ttc" id="IPort_8hpp_html"><div class="ttname"><a href="../../d2/d4f/IPort_8hpp.html">IPort.hpp</a></div><div class="ttdoc">описание интерфейса (абстрактного класса) IPort. </div></div>
+<div class="ttc" id="classTBlock_html_a922d2903b0ffee6c03e9a59d4a994117"><div class="ttname"><a href="../../db/d09/classTBlock.html#a922d2903b0ffee6c03e9a59d4a994117">TBlock::simulate</a></div><div class="ttdeci">virtual IData &amp; simulate(int32_t t, int32_t ttl, TPortOut *port, std::string where)</div><div class="ttdef"><b>Definition:</b> TBlock.cpp:299</div></div>
+<div class="ttc" id="IBlock_8hpp_html_a38502c1ee24cbcc26f94b945684b3547"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a></div><div class="ttdeci">std::list&lt; TPortIn * &gt; in_port_list_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

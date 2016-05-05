@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Класс TBlock</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="../../inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="../../functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="../../d0/d13/classTBlock-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс TBlock</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как предшественник простых блоков  
+ <a href="../../db/d09/classTBlock.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/ded/TBlock_8hpp_source.html">TBlock.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:TBlock:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d60/classTBlock__inherit__graph.png" border="0" usemap="#TBlock_inherit__map" alt="Inheritance graph"/></div>
+<map name="TBlock_inherit__map" id="TBlock_inherit__map">
+<area shape="rect" id="node3" href="../../de/d57/classTConstBlock.html" title="блок, который возвращает константу через единственный выходной порт (A). " alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="../../d3/d47/classTKohonen.html" title="TKohonen" alt="" coords="129,155,210,181"/>
+<area shape="rect" id="node5" href="../../d7/db5/classTMultiplierBlock.html" title="Блок, у которого есть два входа A и B, а на выходе он выдаёт A * B. " alt="" coords="235,155,349,181"/>
+<area shape="rect" id="node6" href="../../d1/d53/classTReaderFromOctMatrix.html" title="блок, который возвращает константу через единственный выходной порт (A). " alt="" coords="374,155,533,181"/>
+<area shape="rect" id="node7" href="../../d0/d1e/classTWriterToOctMatrix.html" title="записывает данные в матрицу в формате Октава. Кол&#45;во столбцов у матрицы всегда на 1 больше чем количе..." alt="" coords="557,155,694,181"/>
+<area shape="rect" id="node2" href="../../d2/de8/classIBlock.html" title="абстрактный предок всех блоков. " alt="" coords="263,5,321,32"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса TBlock:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/dca/classTBlock__coll__graph.png" border="0" usemap="#TBlock_coll__map" alt="Collaboration graph"/></div>
+<map name="TBlock_coll__map" id="TBlock_coll__map">
+<area shape="rect" id="node2" href="../../d2/de8/classIBlock.html" title="абстрактный предок всех блоков. " alt="" coords="7,5,66,32"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a922d2903b0ffee6c03e9a59d4a994117"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/ded/classIData.html">IData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a922d2903b0ffee6c03e9a59d4a994117">simulate</a> (int32_t t, int32_t ttl, <a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *port, std::string where)</td></tr>
+<tr class="separator:a922d2903b0ffee6c03e9a59d4a994117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56c3665118d43f87a256e89cfd67a11"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/ded/classIData.html">IData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#ae56c3665118d43f87a256e89cfd67a11">simulate_port_name</a> (int32_t t, int32_t ttl, std::string port_name, std::string where)</td></tr>
+<tr class="separator:ae56c3665118d43f87a256e89cfd67a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2f27ad22e3a1dee3ef4359a73c57a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#add2f27ad22e3a1dee3ef4359a73c57a7">save_to_ptree</a> (boost::property_tree::ptree &amp;pt, std::string where)</td></tr>
+<tr class="separator:add2f27ad22e3a1dee3ef4359a73c57a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d924d8dadba04ded62a9cbe5b21880"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#af0d924d8dadba04ded62a9cbe5b21880">load_from_ptree</a> (boost::property_tree::ptree &amp;pt, std::string where)</td></tr>
+<tr class="separator:af0d924d8dadba04ded62a9cbe5b21880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf49bf4eb66c5d0fd24f319f8cf452df"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/dd8/classTPortIn.html">TPortIn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#acf49bf4eb66c5d0fd24f319f8cf452df">add_in_port</a> (std::string name, <a class="el" href="../../da/ded/classIData.html">IData</a> &amp;sample_value, int delay=0)</td></tr>
+<tr class="separator:acf49bf4eb66c5d0fd24f319f8cf452df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af421e0435ed4428b35b8297776a48d03"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#af421e0435ed4428b35b8297776a48d03">add_out_port</a> (std::string name, <a class="el" href="../../da/ded/classIData.html">IData</a> &amp;default_value=<a class="el" href="../../d9/d75/classTPortOut.html#a85dd64b88604f351e083b58a5a38ef23">TPortOut::std_default_value</a>)</td></tr>
+<tr class="separator:af421e0435ed4428b35b8297776a48d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49fe0cf27a07dfe8c54609124fe941af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a49fe0cf27a07dfe8c54609124fe941af">remove_port</a> (std::string name)</td></tr>
+<tr class="separator:a49fe0cf27a07dfe8c54609124fe941af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed8d56631b29c9c44ccd886f69d4600"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a7ed8d56631b29c9c44ccd886f69d4600">get_in_ports_list</a> ()</td></tr>
+<tr class="separator:a7ed8d56631b29c9c44ccd886f69d4600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebc1b898a9a5b7e297b8cad319d8d39"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a0ebc1b898a9a5b7e297b8cad319d8d39">get_out_ports_list</a> ()</td></tr>
+<tr class="separator:a0ebc1b898a9a5b7e297b8cad319d8d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b51d060c3ca238252d4d5e944a91e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/dd8/classTPortIn.html">TPortIn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#aa4b51d060c3ca238252d4d5e944a91e5">get_in_port</a> (std::string name)</td></tr>
+<tr class="separator:aa4b51d060c3ca238252d4d5e944a91e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83453da1e8fd3797fd6448a014c7d6aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a83453da1e8fd3797fd6448a014c7d6aa">get_out_port</a> (std::string name)</td></tr>
+<tr class="separator:a83453da1e8fd3797fd6448a014c7d6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc0029be5235bf2dbe9f51d17aa95b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a4cc0029be5235bf2dbe9f51d17aa95b8">add_subblock</a> (<a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *subblock, std::string name)</td></tr>
+<tr class="separator:a4cc0029be5235bf2dbe9f51d17aa95b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21af2c545128de1e14d8f18652931bce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a21af2c545128de1e14d8f18652931bce">connect_subblock</a> (std::string name, <a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">TAutoConnectingType</a> type)</td></tr>
+<tr class="separator:a21af2c545128de1e14d8f18652931bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55aef960c943b985b1d11b5f5b6e6f52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a55aef960c943b985b1d11b5f5b6e6f52">remove_block</a> (<a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *subblock)</td></tr>
+<tr class="separator:a55aef960c943b985b1d11b5f5b6e6f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0280ee43a61d7d09847d0ba46d4d7142"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a0280ee43a61d7d09847d0ba46d4d7142">get_subblock_list</a> ()</td></tr>
+<tr class="separator:a0280ee43a61d7d09847d0ba46d4d7142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee68481c7c937502aeefbdc7a2b2312f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#aee68481c7c937502aeefbdc7a2b2312f">get_subblock_by_name</a> (std::string name)</td></tr>
+<tr class="separator:aee68481c7c937502aeefbdc7a2b2312f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf65747497453186afd2c83159b19d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#addf65747497453186afd2c83159b19d6">TBlock</a> (std::string sname)</td></tr>
+<tr class="separator:addf65747497453186afd2c83159b19d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97eb02aeb0bcca6cc7a834ef2ba7eece"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html#a97eb02aeb0bcca6cc7a834ef2ba7eece">~TBlock</a> ()</td></tr>
+<tr class="separator:a97eb02aeb0bcca6cc7a834ef2ba7eece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIBlock"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIBlock')"><img src="../../closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a></td></tr>
+<tr class="memitem:ae29007d5e0b822063a05ddd930b75067 inherit pub_methods_classIBlock"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de8/classIBlock.html#ae29007d5e0b822063a05ddd930b75067">get_name</a> ()</td></tr>
+<tr class="separator:ae29007d5e0b822063a05ddd930b75067 inherit pub_methods_classIBlock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4661469814185839d6b12be3d6058da inherit pub_methods_classIBlock"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de8/classIBlock.html#aa4661469814185839d6b12be3d6058da">IBlock</a> (std::string s)</td></tr>
+<tr class="separator:aa4661469814185839d6b12be3d6058da inherit pub_methods_classIBlock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b2cbb387db6fee37001399273c29d8 inherit pub_methods_classIBlock"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de8/classIBlock.html#a22b2cbb387db6fee37001399273c29d8">~IBlock</a> ()</td></tr>
+<tr class="separator:a22b2cbb387db6fee37001399273c29d8 inherit pub_methods_classIBlock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как предшественник простых блоков </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="addf65747497453186afd2c83159b19d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TBlock::TBlock </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>sname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a97eb02aeb0bcca6cc7a834ef2ba7eece"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TBlock::~TBlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="acf49bf4eb66c5d0fd24f319f8cf452df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd8/classTPortIn.html">TPortIn</a> * TBlock::add_in_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/ded/classIData.html">IData</a> &amp;&#160;</td>
+          <td class="paramname"><em>sample_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Добавляет входной порт к блоку </p><dl class="section return"><dt>Возвращает</dt><dd>указатель на экземпляр входного порта </dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>имя вновь создаваемого порта </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delay</td><td>задержка по времени, которую будет вносить вновь создаваемый порт </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af421e0435ed4428b35b8297776a48d03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> * TBlock::add_out_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/ded/classIData.html">IData</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em> = <code><a class="el" href="../../d9/d75/classTPortOut.html#a85dd64b88604f351e083b58a5a38ef23">TPortOut::std_default_value</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Добавляет выходной порт к блоку </p><dl class="section return"><dt>Возвращает</dt><dd>указатель на экземпляр выходного порта </dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>имя вновь создаваемого порта </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4cc0029be5235bf2dbe9f51d17aa95b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TBlock::add_subblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *&#160;</td>
+          <td class="paramname"><em>subblock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Добавляет дочерний суб-блок </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">subblock</td><td>указатель на блок, который добавляем в качестве дочернего </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>имя под которым добавляем этот подблок </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a21af2c545128de1e14d8f18652931bce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TBlock::connect_subblock </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">TAutoConnectingType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa4b51d060c3ca238252d4d5e944a91e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd8/classTPortIn.html">TPortIn</a> * TBlock::get_in_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Возвращает указатель на входной порт </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>имя порта. Если входного порта с таким именем нет - вернёт NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="../../d2/de8/classIBlock.html#afe0baae8672fcd40f3f884697c22afb8">IBlock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ed8d56631b29c9c44ccd886f69d4600"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a>&amp; TBlock::get_in_ports_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>ссылку на список входных портов </dd></dl>
+
+<p>Замещает <a class="el" href="../../d2/de8/classIBlock.html#a88cb3c7fa1bf94c33ae78b07cdcbe2f6">IBlock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83453da1e8fd3797fd6448a014c7d6aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> * TBlock::get_out_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Возвращает указатель на выходной порт </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>имя порта. Если входного порта с таким именем нет - вернёт NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="../../d2/de8/classIBlock.html#a62d36fc8844a73ae2a49add18112d7c8">IBlock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ebc1b898a9a5b7e297b8cad319d8d39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a>&amp; TBlock::get_out_ports_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>ссылку на список выходных портов </dd></dl>
+
+<p>Замещает <a class="el" href="../../d2/de8/classIBlock.html#a45a967cf16bff6ef4e3111e7b4c41606">IBlock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee68481c7c937502aeefbdc7a2b2312f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a>* TBlock::get_subblock_by_name </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0280ee43a61d7d09847d0ba46d4d7142"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a>&amp; TBlock::get_subblock_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0d924d8dadba04ded62a9cbe5b21880"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TBlock::load_from_ptree </td>
+          <td>(</td>
+          <td class="paramtype">boost::property_tree::ptree &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяет метод предка <a class="el" href="../../d2/de8/classIBlock.html#a111158e4d9d3f3d076f0bcecb8d446b2">IBlock</a>.</p>
+
+<p>Переопределяется в <a class="el" href="../../d3/d47/classTKohonen.html#ad3d15d973bc128214648510118ebe299">TKohonen</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55aef960c943b985b1d11b5f5b6e6f52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TBlock::remove_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *&#160;</td>
+          <td class="paramname"><em>subblock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Удаляет подблок </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">subblock</td><td>указатель на блок, который мы хотим удалить. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a49fe0cf27a07dfe8c54609124fe941af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TBlock::remove_port </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Удаляет порт с заданным именем </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>имя порта, который будем удалять </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="add2f27ad22e3a1dee3ef4359a73c57a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TBlock::save_to_ptree </td>
+          <td>(</td>
+          <td class="paramtype">boost::property_tree::ptree &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяет метод предка <a class="el" href="../../d2/de8/classIBlock.html#aff3235bae8a57563c048e9477c0350f7">IBlock</a>.</p>
+
+<p>Переопределяется в <a class="el" href="../../d3/d47/classTKohonen.html#a71e4fd7b3ffde8622348bca26af291a4">TKohonen</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a922d2903b0ffee6c03e9a59d4a994117"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/ded/classIData.html">IData</a> &amp; TBlock::simulate </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>ttl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Производит симуляцию: если блок сложный, то симуляция по входящим в него блокам происходит автоматически Если простой, то этот метод переопределён. Если метод не переопределён, то получим исключение. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>модельное время, для которого расчитываем результат симуляции </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ttl</td><td>параметр, позволяющий избежать зацикливания, убавляется при каждой новой рекурсии </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>выходной порт для которого надо произвести симуляцию </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">where</td><td>строка, которая позволяет локализовать ошибку во время симуляции </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>индекс на случай, если выходной порт векторный </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="../../d2/de8/classIBlock.html#a82cca64f316935bbe0885e6006cefa8b">IBlock</a>.</p>
+
+<p>Переопределяется в <a class="el" href="../../d0/d1e/classTWriterToOctMatrix.html#a4679cfb3a1414181baa4e97b6e87a193">TWriterToOctMatrix</a>, <a class="el" href="../../d7/db5/classTMultiplierBlock.html#a48f5dc61e13d26d8aff5521c35e479ff">TMultiplierBlock</a>, <a class="el" href="../../d1/d53/classTReaderFromOctMatrix.html#a724aeec4b3c6fba6e60e27d4c90bcf39">TReaderFromOctMatrix</a>, <a class="el" href="../../d3/d47/classTKohonen.html#ae9746fb2667f9f8faf54949a71abc1aa">TKohonen</a> и <a class="el" href="../../de/d57/classTConstBlock.html#a5d3f4fdeb66549fcc85e4fa4ddbcbe72">TConstBlock</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae56c3665118d43f87a256e89cfd67a11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/ded/classIData.html">IData</a> &amp; TBlock::simulate_port_name </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>ttl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>port_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="../../d3/d47/classTKohonen.html#ae5792cb4778834b27ee052a40345c515">TKohonen</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>/home/tminnigaliev/tmp3/n2/code/n2/src/<a class="el" href="../../df/ded/TBlock_8hpp_source.html">TBlock.hpp</a></li>
+<li>/home/tminnigaliev/tmp3/n2/code/n2/src/<a class="el" href="../../db/de6/TBlock_8cpp.html">TBlock.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<map id="TBlock" name="TBlock">
+<area shape="rect" id="node3" href="$de/d57/classTConstBlock.html" title="блок, который возвращает константу через единственный выходной порт (A). " alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="$d3/d47/classTKohonen.html" title="TKohonen" alt="" coords="129,155,210,181"/>
+<area shape="rect" id="node5" href="$d7/db5/classTMultiplierBlock.html" title="Блок, у которого есть два входа A и B, а на выходе он выдаёт A * B. " alt="" coords="235,155,349,181"/>
+<area shape="rect" id="node6" href="$d1/d53/classTReaderFromOctMatrix.html" title="блок, который возвращает константу через единственный выходной порт (A). " alt="" coords="374,155,533,181"/>
+<area shape="rect" id="node7" href="$d0/d1e/classTWriterToOctMatrix.html" title="записывает данные в матрицу в формате Октава. Кол&#45;во столбцов у матрицы всегда на 1 больше чем количе..." alt="" coords="557,155,694,181"/>
+<area shape="rect" id="node2" href="$d2/de8/classIBlock.html" title="абстрактный предок всех блоков. " alt="" coords="263,5,321,32"/>
+</map>

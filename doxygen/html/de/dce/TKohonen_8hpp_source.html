@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Исходный файл /home/tminnigaliev/tmp3/n2/code/n2/src/TKohonen.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TKohonen.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/dce/TKohonen_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _TKOHONEN_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _TKOHONEN_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/ded/TBlock_8hpp.html">TBlock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d0b/TDataMatrix_8hpp.html">TDataMatrix.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d3/d47/classTKohonen.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d47/classTKohonen.html">TKohonen</a> : <span class="keyword">public</span> <a class="code" href="../../db/d09/classTBlock.html">TBlock</a>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="comment">//calculates all output ports for time t</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../d3/d47/classTKohonen.html#ae9746fb2667f9f8faf54949a71abc1aa">simulate</a>(int32_t t, int32_t ttl, <a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a> * port, std::string where);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../d3/d47/classTKohonen.html#ae5792cb4778834b27ee052a40345c515">simulate_port_name</a>(int32_t t, int32_t ttl, std::string port_name, std::string where);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../d3/d47/classTKohonen.html#a71e4fd7b3ffde8622348bca26af291a4">save_to_ptree</a>(boost::property_tree::ptree &amp;pt, std::string where);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../d3/d47/classTKohonen.html#ad3d15d973bc128214648510118ebe299">load_from_ptree</a>(boost::property_tree::ptree &amp;pt, std::string where);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                <a class="code" href="../../d3/d47/classTKohonen.html#a14037c24ff1888803f73f1f75d6cc6a6">TKohonen</a>(std::string sname, <span class="keywordtype">int</span> inp_cnt, std::string inp_name, <span class="keywordtype">int</span> neuron_cnt, std::string out_name);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span>                 <a class="code" href="../../d3/d47/classTKohonen.html#a8fee5d046e0e4a703cb4831f6441b2c1">~TKohonen</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="../../d0/d72/classTDataMatrix.html">TDataMatrix</a>             *weights;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="../../de/d90/classTDataVector.html">TDataVector</a>             *outputs;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">double</span>                  alpha;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="ttc" id="classTDataMatrix_html"><div class="ttname"><a href="../../d0/d72/classTDataMatrix.html">TDataMatrix</a></div><div class="ttdef"><b>Definition:</b> TDataMatrix.hpp:6</div></div>
+<div class="ttc" id="classTPortOut_html"><div class="ttname"><a href="../../d9/d75/classTPortOut.html">TPortOut</a></div><div class="ttdoc">Класс выходного порта </div><div class="ttdef"><b>Definition:</b> TPortOut.hpp:13</div></div>
+<div class="ttc" id="classTKohonen_html_a71e4fd7b3ffde8622348bca26af291a4"><div class="ttname"><a href="../../d3/d47/classTKohonen.html#a71e4fd7b3ffde8622348bca26af291a4">TKohonen::save_to_ptree</a></div><div class="ttdeci">virtual void save_to_ptree(boost::property_tree::ptree &amp;pt, std::string where)</div><div class="ttdef"><b>Definition:</b> TKohonen.cpp:22</div></div>
+<div class="ttc" id="classTKohonen_html_a8fee5d046e0e4a703cb4831f6441b2c1"><div class="ttname"><a href="../../d3/d47/classTKohonen.html#a8fee5d046e0e4a703cb4831f6441b2c1">TKohonen::~TKohonen</a></div><div class="ttdeci">virtual ~TKohonen()</div><div class="ttdef"><b>Definition:</b> TKohonen.cpp:57</div></div>
+<div class="ttc" id="classTDataVector_html"><div class="ttname"><a href="../../de/d90/classTDataVector.html">TDataVector</a></div><div class="ttdef"><b>Definition:</b> TDataVector.hpp:6</div></div>
+<div class="ttc" id="classIData_html"><div class="ttname"><a href="../../da/ded/classIData.html">IData</a></div><div class="ttdef"><b>Definition:</b> IData.hpp:7</div></div>
+<div class="ttc" id="classTKohonen_html_ae9746fb2667f9f8faf54949a71abc1aa"><div class="ttname"><a href="../../d3/d47/classTKohonen.html#ae9746fb2667f9f8faf54949a71abc1aa">TKohonen::simulate</a></div><div class="ttdeci">virtual IData &amp; simulate(int32_t t, int32_t ttl, TPortOut *port, std::string where)</div><div class="ttdef"><b>Definition:</b> TKohonen.cpp:14</div></div>
+<div class="ttc" id="classTKohonen_html_ad3d15d973bc128214648510118ebe299"><div class="ttname"><a href="../../d3/d47/classTKohonen.html#ad3d15d973bc128214648510118ebe299">TKohonen::load_from_ptree</a></div><div class="ttdeci">virtual void load_from_ptree(boost::property_tree::ptree &amp;pt, std::string where)</div><div class="ttdef"><b>Definition:</b> TKohonen.cpp:32</div></div>
+<div class="ttc" id="TDataMatrix_8hpp_html"><div class="ttname"><a href="../../d7/d0b/TDataMatrix_8hpp.html">TDataMatrix.hpp</a></div></div>
+<div class="ttc" id="classTBlock_html"><div class="ttname"><a href="../../db/d09/classTBlock.html">TBlock</a></div><div class="ttdoc">этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как пред...</div><div class="ttdef"><b>Definition:</b> TBlock.hpp:60</div></div>
+<div class="ttc" id="classTKohonen_html"><div class="ttname"><a href="../../d3/d47/classTKohonen.html">TKohonen</a></div><div class="ttdef"><b>Definition:</b> TKohonen.hpp:13</div></div>
+<div class="ttc" id="classTKohonen_html_ae5792cb4778834b27ee052a40345c515"><div class="ttname"><a href="../../d3/d47/classTKohonen.html#ae5792cb4778834b27ee052a40345c515">TKohonen::simulate_port_name</a></div><div class="ttdeci">virtual IData &amp; simulate_port_name(int32_t t, int32_t ttl, std::string port_name, std::string where)</div></div>
+<div class="ttc" id="classTKohonen_html_a14037c24ff1888803f73f1f75d6cc6a6"><div class="ttname"><a href="../../d3/d47/classTKohonen.html#a14037c24ff1888803f73f1f75d6cc6a6">TKohonen::TKohonen</a></div><div class="ttdeci">TKohonen(std::string sname, int inp_cnt, std::string inp_name, int neuron_cnt, std::string out_name)</div><div class="ttdef"><b>Definition:</b> TKohonen.cpp:42</div></div>
+<div class="ttc" id="TBlock_8hpp_html"><div class="ttname"><a href="../../df/ded/TBlock_8hpp.html">TBlock.hpp</a></div><div class="ttdoc">описание класса TBlock (может быть сложным блоком или предком простого блока) </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

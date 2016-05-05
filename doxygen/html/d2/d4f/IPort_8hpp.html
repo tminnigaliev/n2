@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Файл /home/tminnigaliev/tmp3/n2/code/n2/src/IPort.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл IPort.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>описание интерфейса (абстрактного класса) <a class="el" href="../../d3/dd0/classIPort.html" title="абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)...">IPort</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/dce/IData_8hpp_source.html">IData.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для IPort.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d72/IPort_8hpp__incl.png" border="0" usemap="#_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2IPort_8hpp" alt=""/></div>
+<map name="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2IPort_8hpp" id="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2IPort_8hpp">
+<area shape="rect" id="node4" href="../../d8/dfd/config_8hpp.html" title="здесь хранятся настройки проекта " alt="" coords="259,184,342,211"/>
+<area shape="rect" id="node5" href="../../d1/dce/IData_8hpp.html" title="IData.hpp" alt="" coords="121,109,200,136"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d21/IPort_8hpp__dep__incl.png" border="0" usemap="#_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2IPort_8hppdep" alt=""/></div>
+<map name="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2IPort_8hppdep" id="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2IPort_8hppdep">
+<area shape="rect" id="node2" href="../../db/d00/IPort_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/IPort.cpp" alt="" coords="137,109,283,165"/>
+<area shape="rect" id="node3" href="../../df/ded/TBlock_8hpp.html" title="описание класса TBlock (может быть сложным блоком или предком простого блока) " alt="" coords="248,317,393,373"/>
+<area shape="rect" id="node15" href="../../db/d92/TPortIn_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortIn.hpp" alt="" coords="409,213,555,269"/>
+<area shape="rect" id="node18" href="../../d1/d15/TPortOut_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortOut.hpp" alt="" coords="800,109,945,165"/>
+<area shape="rect" id="node4" href="../../d4/dd7/TConstBlock_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TConstBlock.hpp" alt="" coords="911,421,1056,477"/>
+<area shape="rect" id="node5" href="../../df/d0a/main_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/main.cpp" alt="" coords="799,525,944,581"/>
+<area shape="rect" id="node6" href="../../de/d97/ut_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/ut\l/ut.cpp" alt="" coords="579,525,718,581"/>
+<area shape="rect" id="node7" href="../../d4/df1/TMultiplierBlock_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TMultiplierBlock.hpp" alt="" coords="520,421,665,477"/>
+<area shape="rect" id="node8" href="../../db/de6/TBlock_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TBlock.cpp" alt="" coords="689,421,835,477"/>
+<area shape="rect" id="node9" href="../../d2/de4/TKohonen_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TKohonen.cpp" alt="" coords="221,525,367,581"/>
+<area shape="rect" id="node10" href="../../de/dce/TKohonen_8hpp.html" title="описание класса для реализации сети Кохонена " alt="" coords="248,421,393,477"/>
+<area shape="rect" id="node11" href="../../d5/dd7/TReaderFromOctMatrix_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TReaderFromOctMatrix.hpp" alt="" coords="1080,421,1268,477"/>
+<area shape="rect" id="node13" href="../../da/d5e/TWriterToOctMatrix_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TWriterToOctMatrix.hpp" alt="" coords="5,421,172,477"/>
+<area shape="rect" id="node12" href="../../d3/d86/TReaderFromOctMatrix_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TReaderFromOctMatrix.cpp" alt="" coords="1080,525,1268,581"/>
+<area shape="rect" id="node14" href="../../da/dd2/TWriterToOctMatrix_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TWriterToOctMatrix.cpp" alt="" coords="5,525,172,581"/>
+<area shape="rect" id="node16" href="../../dc/d85/TPortIn_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortIn.cpp" alt="" coords="520,317,665,373"/>
+<area shape="rect" id="node17" href="../../d8/d9f/TPortOut_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortOut.cpp" alt="" coords="689,317,835,373"/>
+</map>
+</div>
+</div>
+<p><a href="../../d2/d4f/IPort_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd0/classIPort.html">IPort</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных).  <a href="../../d3/dd0/classIPort.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a7674c329addda8fbe6176bbbf25c8b21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">PortType</a> { <a class="el" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21a5374e593456f777e36bf4cabf93dcbb1">PortType::PT_IN</a>, 
+<a class="el" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21a42780855c6e92c2f579ccedc040dd87a">PortType::PT_OUT</a>, 
+<a class="el" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21ad426d912e3f42e34eb4afb370046fe34">PortType::PT_UNKNOWN</a>
+ }<tr class="separator:a7674c329addda8fbe6176bbbf25c8b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>описание интерфейса (абстрактного класса) <a class="el" href="../../d3/dd0/classIPort.html" title="абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)...">IPort</a>. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="a7674c329addda8fbe6176bbbf25c8b21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">PortType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Класс-перечисление для обозначения типа порта (входной или выходной) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a class="anchor" id="a7674c329addda8fbe6176bbbf25c8b21a5374e593456f777e36bf4cabf93dcbb1"></a>PT_IN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7674c329addda8fbe6176bbbf25c8b21a42780855c6e92c2f579ccedc040dd87a"></a>PT_OUT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7674c329addda8fbe6176bbbf25c8b21ad426d912e3f42e34eb4afb370046fe34"></a>PT_UNKNOWN&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

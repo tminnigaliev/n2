@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Исходный файл /home/tminnigaliev/tmp3/n2/code/n2/src/IPort.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">IPort.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d4f/IPort_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _IPORT_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _IPORT_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/dfd/config_8hpp.html">config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/dce/IData_8hpp.html">IData.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/de8/classIBlock.html">IBlock</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">   19</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">PortType</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21a5374e593456f777e36bf4cabf93dcbb1">PT_IN</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21a42780855c6e92c2f579ccedc040dd87a">PT_OUT</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21ad426d912e3f42e34eb4afb370046fe34">PT_UNKNOWN</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d3/dd0/classIPort.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/dd0/classIPort.html">IPort</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">static</span> uint32_t         id_autoinc;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        uint32_t                id;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::string             name;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d3/dd0/classIPort.html">IPort</a>           * <a class="code" href="../../d3/dd0/classIPort.html#a2b411f6cb94859b8306265978652a478">get_other_port</a>() = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d3/dd0/classIPort.html#a5a061f254ac6fe039103a9179a836a0c">   42</a></span>&#160;        <span class="keyword">virtual</span> std::string     <a class="code" href="../../d3/dd0/classIPort.html#a5a061f254ac6fe039103a9179a836a0c">get_name</a>(){<span class="keywordflow">return</span> name;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../d3/dd0/classIPort.html#a0f083ca76c78fbc9b961485d177fd546">get_value</a>(<span class="keyword">const</span> int32_t time, <span class="keyword">const</span> int32_t ttl, std::string where) = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../d3/dd0/classIPort.html#aafe4b49a7936a1731405a328e17d9ba0">get_sample_value</a>() = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">PortType</a>        <a class="code" href="../../d3/dd0/classIPort.html#abab5e015ecfdbabf62672fe52fd6ca8a">get_port_type</a>() = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d2/de8/classIBlock.html">IBlock</a>          *<a class="code" href="../../d3/dd0/classIPort.html#a2cf8188f4f73c5d923c1d6b40faf6600">get_block</a>() = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d3/dd0/classIPort.html#ae75813a34f3b1fac281485ec6fa5c9d1">   61</a></span>&#160;        <span class="keyword">virtual</span> uint32_t        <a class="code" href="../../d3/dd0/classIPort.html#ae75813a34f3b1fac281485ec6fa5c9d1">get_id</a>(){<span class="keywordflow">return</span> this-&gt;id;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d3/dd0/classIPort.html#adf2bc9b721b8e982ac92ca235afa0438">   64</a></span>&#160;                                <a class="code" href="../../d3/dd0/classIPort.html#adf2bc9b721b8e982ac92ca235afa0438">IPort</a>(std::string name):</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                        name(name){this-&gt;<span class="keywordtype">id</span> = IPort::id_autoinc++;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d3/dd0/classIPort.html#a6cd4c3c4b4538545c570b4d5f4865141">   66</a></span>&#160;        <span class="keyword">virtual</span>                 <a class="code" href="../../d3/dd0/classIPort.html#a6cd4c3c4b4538545c570b4d5f4865141">~IPort</a>(){};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="IPort_8hpp_html_a7674c329addda8fbe6176bbbf25c8b21a42780855c6e92c2f579ccedc040dd87a"><div class="ttname"><a href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21a42780855c6e92c2f579ccedc040dd87a">PortType::PT_OUT</a></div></div>
+<div class="ttc" id="IData_8hpp_html"><div class="ttname"><a href="../../d1/dce/IData_8hpp.html">IData.hpp</a></div></div>
+<div class="ttc" id="classIPort_html_a5a061f254ac6fe039103a9179a836a0c"><div class="ttname"><a href="../../d3/dd0/classIPort.html#a5a061f254ac6fe039103a9179a836a0c">IPort::get_name</a></div><div class="ttdeci">virtual std::string get_name()</div><div class="ttdef"><b>Definition:</b> IPort.hpp:42</div></div>
+<div class="ttc" id="config_8hpp_html"><div class="ttname"><a href="../../d8/dfd/config_8hpp.html">config.hpp</a></div><div class="ttdoc">здесь хранятся настройки проекта </div></div>
+<div class="ttc" id="classIPort_html_a2b411f6cb94859b8306265978652a478"><div class="ttname"><a href="../../d3/dd0/classIPort.html#a2b411f6cb94859b8306265978652a478">IPort::get_other_port</a></div><div class="ttdeci">virtual IPort * get_other_port()=0</div></div>
+<div class="ttc" id="classIData_html"><div class="ttname"><a href="../../da/ded/classIData.html">IData</a></div><div class="ttdef"><b>Definition:</b> IData.hpp:7</div></div>
+<div class="ttc" id="IPort_8hpp_html_a7674c329addda8fbe6176bbbf25c8b21a5374e593456f777e36bf4cabf93dcbb1"><div class="ttname"><a href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21a5374e593456f777e36bf4cabf93dcbb1">PortType::PT_IN</a></div></div>
+<div class="ttc" id="classIPort_html_aafe4b49a7936a1731405a328e17d9ba0"><div class="ttname"><a href="../../d3/dd0/classIPort.html#aafe4b49a7936a1731405a328e17d9ba0">IPort::get_sample_value</a></div><div class="ttdeci">virtual IData &amp; get_sample_value()=0</div></div>
+<div class="ttc" id="classIBlock_html"><div class="ttname"><a href="../../d2/de8/classIBlock.html">IBlock</a></div><div class="ttdoc">абстрактный предок всех блоков. </div><div class="ttdef"><b>Definition:</b> IBlock.hpp:39</div></div>
+<div class="ttc" id="IPort_8hpp_html_a7674c329addda8fbe6176bbbf25c8b21"><div class="ttname"><a href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">PortType</a></div><div class="ttdeci">PortType</div><div class="ttdef"><b>Definition:</b> IPort.hpp:19</div></div>
+<div class="ttc" id="classIPort_html_a6cd4c3c4b4538545c570b4d5f4865141"><div class="ttname"><a href="../../d3/dd0/classIPort.html#a6cd4c3c4b4538545c570b4d5f4865141">IPort::~IPort</a></div><div class="ttdeci">virtual ~IPort()</div><div class="ttdef"><b>Definition:</b> IPort.hpp:66</div></div>
+<div class="ttc" id="classIPort_html_abab5e015ecfdbabf62672fe52fd6ca8a"><div class="ttname"><a href="../../d3/dd0/classIPort.html#abab5e015ecfdbabf62672fe52fd6ca8a">IPort::get_port_type</a></div><div class="ttdeci">virtual PortType get_port_type()=0</div></div>
+<div class="ttc" id="classIPort_html_a0f083ca76c78fbc9b961485d177fd546"><div class="ttname"><a href="../../d3/dd0/classIPort.html#a0f083ca76c78fbc9b961485d177fd546">IPort::get_value</a></div><div class="ttdeci">virtual IData &amp; get_value(const int32_t time, const int32_t ttl, std::string where)=0</div></div>
+<div class="ttc" id="IPort_8hpp_html_a7674c329addda8fbe6176bbbf25c8b21ad426d912e3f42e34eb4afb370046fe34"><div class="ttname"><a href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21ad426d912e3f42e34eb4afb370046fe34">PortType::PT_UNKNOWN</a></div></div>
+<div class="ttc" id="classIPort_html_adf2bc9b721b8e982ac92ca235afa0438"><div class="ttname"><a href="../../d3/dd0/classIPort.html#adf2bc9b721b8e982ac92ca235afa0438">IPort::IPort</a></div><div class="ttdeci">IPort(std::string name)</div><div class="ttdef"><b>Definition:</b> IPort.hpp:64</div></div>
+<div class="ttc" id="classIPort_html_a2cf8188f4f73c5d923c1d6b40faf6600"><div class="ttname"><a href="../../d3/dd0/classIPort.html#a2cf8188f4f73c5d923c1d6b40faf6600">IPort::get_block</a></div><div class="ttdeci">virtual IBlock * get_block()=0</div></div>
+<div class="ttc" id="classIPort_html"><div class="ttname"><a href="../../d3/dd0/classIPort.html">IPort</a></div><div class="ttdoc">абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)...</div><div class="ttdef"><b>Definition:</b> IPort.hpp:29</div></div>
+<div class="ttc" id="classIPort_html_ae75813a34f3b1fac281485ec6fa5c9d1"><div class="ttname"><a href="../../d3/dd0/classIPort.html#ae75813a34f3b1fac281485ec6fa5c9d1">IPort::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdef"><b>Definition:</b> IPort.hpp:61</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

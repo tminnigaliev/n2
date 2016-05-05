@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Файл /home/tminnigaliev/tmp3/n2/code/n2/src/TBlock.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл TBlock.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>описание класса <a class="el" href="../../db/d09/classTBlock.html" title="этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как пред...">TBlock</a> (может быть сложным блоком или предком простого блока)  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d4f/IPort_8hpp_source.html">IPort.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d6b/IBlock_8hpp_source.html">IBlock.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d92/TPortIn_8hpp_source.html">TPortIn.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d15/TPortOut_8hpp_source.html">TPortOut.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для TBlock.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d76/TBlock_8hpp__incl.png" border="0" usemap="#_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2TBlock_8hpp" alt=""/></div>
+<map name="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2TBlock_8hpp" id="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2TBlock_8hpp">
+<area shape="rect" id="node4" href="../../d2/d4f/IPort_8hpp.html" title="описание интерфейса (абстрактного класса) IPort. " alt="" coords="573,259,648,285"/>
+<area shape="rect" id="node9" href="../../d1/d6b/IBlock_8hpp.html" title="описание интерфейса (абстрактного класса) IBlock. " alt="" coords="414,259,498,285"/>
+<area shape="rect" id="node13" href="../../db/d92/TPortIn_8hpp.html" title="TPortIn.hpp" alt="" coords="653,109,744,136"/>
+<area shape="rect" id="node14" href="../../d1/d15/TPortOut_8hpp.html" title="TPortOut.hpp" alt="" coords="774,184,874,211"/>
+<area shape="rect" id="node6" href="../../d8/dfd/config_8hpp.html" title="здесь хранятся настройки проекта " alt="" coords="852,423,934,449"/>
+<area shape="rect" id="node7" href="../../d1/dce/IData_8hpp.html" title="IData.hpp" alt="" coords="700,341,779,367"/>
+<area shape="rect" id="node15" href="../../d2/dc7/TData_8hpp.html" title="TData.hpp" alt="" coords="813,259,896,285"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d6b/TBlock_8hpp__dep__incl.png" border="0" usemap="#_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2TBlock_8hppdep" alt=""/></div>
+<map name="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2TBlock_8hppdep" id="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2TBlock_8hppdep">
+<area shape="rect" id="node2" href="../../d4/dd7/TConstBlock_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TConstBlock.hpp" alt="" coords="198,109,343,165"/>
+<area shape="rect" id="node3" href="../../df/d0a/main_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/main.cpp" alt="" coords="28,213,174,269"/>
+<area shape="rect" id="node4" href="../../de/d97/ut_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/ut\l/ut.cpp" alt="" coords="256,213,394,269"/>
+<area shape="rect" id="node5" href="../../d4/df1/TMultiplierBlock_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TMultiplierBlock.hpp" alt="" coords="28,109,174,165"/>
+<area shape="rect" id="node6" href="../../db/de6/TBlock_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TBlock.cpp" alt="" coords="822,109,967,165"/>
+<area shape="rect" id="node7" href="../../d2/de4/TKohonen_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TKohonen.cpp" alt="" coords="1046,213,1191,269"/>
+<area shape="rect" id="node8" href="../../de/dce/TKohonen_8hpp.html" title="описание класса для реализации сети Кохонена " alt="" coords="991,109,1136,165"/>
+<area shape="rect" id="node9" href="../../d5/dd7/TReaderFromOctMatrix_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TReaderFromOctMatrix.hpp" alt="" coords="419,109,607,165"/>
+<area shape="rect" id="node11" href="../../da/d5e/TWriterToOctMatrix_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TWriterToOctMatrix.hpp" alt="" coords="631,109,798,165"/>
+<area shape="rect" id="node10" href="../../d3/d86/TReaderFromOctMatrix_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TReaderFromOctMatrix.cpp" alt="" coords="419,213,607,269"/>
+<area shape="rect" id="node12" href="../../da/dd2/TWriterToOctMatrix_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TWriterToOctMatrix.cpp" alt="" coords="631,213,798,269"/>
+</map>
+</div>
+</div>
+<p><a href="../../df/ded/TBlock_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d09/classTBlock.html">TBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как предшественник простых блоков  <a href="../../db/d09/classTBlock.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a2cd2248df693772a250b31dcf418b3c5"><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a></td></tr>
+<tr class="separator:a2cd2248df693772a250b31dcf418b3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c41a8196c0e4cbdeaa509647d68da76"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <a class="el" href="../../d3/dd0/classIPort.html">IPort</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ded/TBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a></td></tr>
+<tr class="separator:a9c41a8196c0e4cbdeaa509647d68da76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27fc711f89368b1b61d0d8a01bfbe842"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="../../d3/dd0/classIPort.html">IPort</a> *, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ded/TBlock_8hpp.html#a27fc711f89368b1b61d0d8a01bfbe842">port_to_name_map_t</a></td></tr>
+<tr class="separator:a27fc711f89368b1b61d0d8a01bfbe842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ceb085eec706bdbc38da83ea5a5988"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ded/TBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a></td></tr>
+<tr class="separator:aa2ceb085eec706bdbc38da83ea5a5988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af96aa07876afc23d5db972fdee4c2ed7"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ded/TBlock_8hpp.html#af96aa07876afc23d5db972fdee4c2ed7">block_to_name_map_t</a></td></tr>
+<tr class="separator:af96aa07876afc23d5db972fdee4c2ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ae98967e69d065b0a74c2e49d00f5a650"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">TAutoConnectingType</a> { <br />
+&#160;&#160;<a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a755f829dcfa1a52d1aef8a943ae2c0bd">ACT_INPUTS_ASSIGN</a> = 0, 
+<a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650adac3a06e8fc9509526c0586423cea509">ACT_OUTPUTS_ASSIGN</a> = 1, 
+<a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650a7c8940cdf830da30566e7e425c746e90">ACT_ONE_ONE_PIPELINE</a> = 2, 
+<a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ac70f51840788743500175466673cae49">ACT_SCATTER_DIMS_PIPELINE</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650ab460bc3bea10dc341abd528a49934648">ACT_SCATTER_PIPELINE</a> = 4
+<br />
+ }<tr class="separator:ae98967e69d065b0a74c2e49d00f5a650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>описание класса <a class="el" href="../../db/d09/classTBlock.html" title="этот класс используется двояко: как сложный блок (в который можно добавлять простые блоки) и как пред...">TBlock</a> (может быть сложным блоком или предком простого блока) </p>
+</div><h2 class="groupheader">Типы</h2>
+<a class="anchor" id="af96aa07876afc23d5db972fdee4c2ed7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;<a class="el" href="../../d2/de8/classIBlock.html">IBlock</a>*, std::string&gt; <a class="el" href="../../df/ded/TBlock_8hpp.html#af96aa07876afc23d5db972fdee4c2ed7">block_to_name_map_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2ceb085eec706bdbc38da83ea5a5988"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a>*&gt; <a class="el" href="../../d1/d6b/IBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c41a8196c0e4cbdeaa509647d68da76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="../../d3/dd0/classIPort.html">IPort</a>*&gt; <a class="el" href="../../d1/d6b/IBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27fc711f89368b1b61d0d8a01bfbe842"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;<a class="el" href="../../d3/dd0/classIPort.html">IPort</a>*, std::string&gt; <a class="el" href="../../df/ded/TBlock_8hpp.html#a27fc711f89368b1b61d0d8a01bfbe842">port_to_name_map_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2cd2248df693772a250b31dcf418b3c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;<a class="el" href="../../d2/de8/classIBlock.html">IBlock</a>*&gt; <a class="el" href="../../df/ded/TBlock_8hpp.html#a2cd2248df693772a250b31dcf418b3c5">subblock_list_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="ae98967e69d065b0a74c2e49d00f5a650"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../df/ded/TBlock_8hpp.html#ae98967e69d065b0a74c2e49d00f5a650">TAutoConnectingType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a class="anchor" id="ae98967e69d065b0a74c2e49d00f5a650a755f829dcfa1a52d1aef8a943ae2c0bd"></a>ACT_INPUTS_ASSIGN&#160;</td><td class="fielddoc">
+<p>проверяется направление, имя, размерность для каждого входа </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae98967e69d065b0a74c2e49d00f5a650adac3a06e8fc9509526c0586423cea509"></a>ACT_OUTPUTS_ASSIGN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae98967e69d065b0a74c2e49d00f5a650a7c8940cdf830da30566e7e425c746e90"></a>ACT_ONE_ONE_PIPELINE&#160;</td><td class="fielddoc">
+<p>пайплайнятся один к одному с проверкой размерности и имени </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae98967e69d065b0a74c2e49d00f5a650ac70f51840788743500175466673cae49"></a>ACT_SCATTER_DIMS_PIPELINE&#160;</td><td class="fielddoc">
+<p>пайплайнятся с разветвлением, если необходимо, с проверкой только размерности </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae98967e69d065b0a74c2e49d00f5a650ab460bc3bea10dc341abd528a49934648"></a>ACT_SCATTER_PIPELINE&#160;</td><td class="fielddoc">
+<p>пайплайнятся с разветвлением, если необходимо, с проверкой размерности и имени </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

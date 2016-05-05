@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Исходный файл /home/tminnigaliev/tmp3/n2/code/n2/src/IBlock.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">IBlock.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d1/d6b/IBlock_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _IBLOCK_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _IBLOCK_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/dfd/config_8hpp.html">config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/dce/IData_8hpp.html">IData.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;boost/property_tree/ptree.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;boost/property_tree/xml_parser.hpp&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/dd0/classIPort.html">IPort</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/de8/classIBlock.html">IBlock</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/dd8/classTPortIn.html">TPortIn</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> std::list&lt;TPortIn*&gt;             <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">   23</a></span>&#160;<span class="keyword">typedef</span> std::list&lt;TPortOut*&gt;            <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d1/d6b/IBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">   24</a></span>&#160;<span class="keyword">typedef</span> std::map&lt;std::string, IPort*&gt;   <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d1/d6b/IBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">   25</a></span>&#160;<span class="keyword">typedef</span> std::map&lt;std::string, IBlock*&gt;  <a class="code" href="../../d1/d6b/IBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * операция соединения портов блоков одного ранга называется pipeline. При этой операции</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * соединяться должны всегда разнородные порты (выходной и входной).</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * операция соединения портов внешнего блока с портами внутренних блоков называется assign</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * соединяться должны всегда однородные порты (входной со входным, выходной с выходным) и</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * не должно быть никаких разветвлений.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d2/de8/classIBlock.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d2/de8/classIBlock.html">IBlock</a>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">//calculates all output ports for time t</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span>        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>&amp;          <a class="code" href="../../d2/de8/classIBlock.html#a82cca64f316935bbe0885e6006cefa8b">simulate</a>(int32_t t, int32_t ttl, <a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a> * port, std::string where) = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//virtual void          modify(int32_t t, IData &amp;error) = 0;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d2/de8/classIBlock.html#aff3235bae8a57563c048e9477c0350f7">   54</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../d2/de8/classIBlock.html#aff3235bae8a57563c048e9477c0350f7">save_to_ptree</a>(boost::property_tree::ptree &amp;pt, std::string where){};</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d2/de8/classIBlock.html#a111158e4d9d3f3d076f0bcecb8d446b2">   55</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../d2/de8/classIBlock.html#a111158e4d9d3f3d076f0bcecb8d446b2">load_from_ptree</a>(boost::property_tree::ptree &amp;pt, std::string where){};</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d2/de8/classIBlock.html#ae29007d5e0b822063a05ddd930b75067">   59</a></span>&#160;        <span class="keyword">virtual</span> std::string     <a class="code" href="../../d2/de8/classIBlock.html#ae29007d5e0b822063a05ddd930b75067">get_name</a>(){<span class="keywordflow">return</span> name;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d2/de8/classIBlock.html#aa4661469814185839d6b12be3d6058da">   61</a></span>&#160;                                <a class="code" href="../../d2/de8/classIBlock.html#aa4661469814185839d6b12be3d6058da">IBlock</a>(std::string s){name = s;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d2/de8/classIBlock.html#a22b2cbb387db6fee37001399273c29d8">   62</a></span>&#160;        <span class="keyword">virtual</span>                 <a class="code" href="../../d2/de8/classIBlock.html#a22b2cbb387db6fee37001399273c29d8">~IBlock</a>(){};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a>&amp; <a class="code" href="../../d2/de8/classIBlock.html#a88cb3c7fa1bf94c33ae78b07cdcbe2f6">get_in_ports_list</a>() = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a>&amp;<a class="code" href="../../d2/de8/classIBlock.html#a45a967cf16bff6ef4e3111e7b4c41606">get_out_ports_list</a>() = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d6/dd8/classTPortIn.html">TPortIn</a>         *<a class="code" href="../../d2/de8/classIBlock.html#afe0baae8672fcd40f3f884697c22afb8">get_in_port</a>(std::string name) = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d9/d75/classTPortOut.html">TPortOut</a>        *<a class="code" href="../../d2/de8/classIBlock.html#a62d36fc8844a73ae2a49add18112d7c8">get_out_port</a>(std::string name) = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        std::string             name;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="ttc" id="classIBlock_html_a82cca64f316935bbe0885e6006cefa8b"><div class="ttname"><a href="../../d2/de8/classIBlock.html#a82cca64f316935bbe0885e6006cefa8b">IBlock::simulate</a></div><div class="ttdeci">virtual IData &amp; simulate(int32_t t, int32_t ttl, TPortOut *port, std::string where)=0</div></div>
+<div class="ttc" id="IData_8hpp_html"><div class="ttname"><a href="../../d1/dce/IData_8hpp.html">IData.hpp</a></div></div>
+<div class="ttc" id="IBlock_8hpp_html_a1ceda2cbf4054de0285bca8f8a331900"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#a1ceda2cbf4054de0285bca8f8a331900">out_port_list_t</a></div><div class="ttdeci">std::list&lt; TPortOut * &gt; out_port_list_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:23</div></div>
+<div class="ttc" id="classTPortOut_html"><div class="ttname"><a href="../../d9/d75/classTPortOut.html">TPortOut</a></div><div class="ttdoc">Класс выходного порта </div><div class="ttdef"><b>Definition:</b> TPortOut.hpp:13</div></div>
+<div class="ttc" id="classIBlock_html_a22b2cbb387db6fee37001399273c29d8"><div class="ttname"><a href="../../d2/de8/classIBlock.html#a22b2cbb387db6fee37001399273c29d8">IBlock::~IBlock</a></div><div class="ttdeci">virtual ~IBlock()</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:62</div></div>
+<div class="ttc" id="classIBlock_html_afe0baae8672fcd40f3f884697c22afb8"><div class="ttname"><a href="../../d2/de8/classIBlock.html#afe0baae8672fcd40f3f884697c22afb8">IBlock::get_in_port</a></div><div class="ttdeci">virtual TPortIn * get_in_port(std::string name)=0</div></div>
+<div class="ttc" id="config_8hpp_html"><div class="ttname"><a href="../../d8/dfd/config_8hpp.html">config.hpp</a></div><div class="ttdoc">здесь хранятся настройки проекта </div></div>
+<div class="ttc" id="classIData_html"><div class="ttname"><a href="../../da/ded/classIData.html">IData</a></div><div class="ttdef"><b>Definition:</b> IData.hpp:7</div></div>
+<div class="ttc" id="classIBlock_html_a62d36fc8844a73ae2a49add18112d7c8"><div class="ttname"><a href="../../d2/de8/classIBlock.html#a62d36fc8844a73ae2a49add18112d7c8">IBlock::get_out_port</a></div><div class="ttdeci">virtual TPortOut * get_out_port(std::string name)=0</div></div>
+<div class="ttc" id="classIBlock_html"><div class="ttname"><a href="../../d2/de8/classIBlock.html">IBlock</a></div><div class="ttdoc">абстрактный предок всех блоков. </div><div class="ttdef"><b>Definition:</b> IBlock.hpp:39</div></div>
+<div class="ttc" id="IBlock_8hpp_html_a9c41a8196c0e4cbdeaa509647d68da76"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#a9c41a8196c0e4cbdeaa509647d68da76">name_to_port_map_t</a></div><div class="ttdeci">std::map&lt; std::string, IPort * &gt; name_to_port_map_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:24</div></div>
+<div class="ttc" id="classIBlock_html_a111158e4d9d3f3d076f0bcecb8d446b2"><div class="ttname"><a href="../../d2/de8/classIBlock.html#a111158e4d9d3f3d076f0bcecb8d446b2">IBlock::load_from_ptree</a></div><div class="ttdeci">virtual void load_from_ptree(boost::property_tree::ptree &amp;pt, std::string where)</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:55</div></div>
+<div class="ttc" id="classIBlock_html_a88cb3c7fa1bf94c33ae78b07cdcbe2f6"><div class="ttname"><a href="../../d2/de8/classIBlock.html#a88cb3c7fa1bf94c33ae78b07cdcbe2f6">IBlock::get_in_ports_list</a></div><div class="ttdeci">virtual in_port_list_t &amp; get_in_ports_list()=0</div></div>
+<div class="ttc" id="IBlock_8hpp_html_aa2ceb085eec706bdbc38da83ea5a5988"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#aa2ceb085eec706bdbc38da83ea5a5988">name_to_block_map_t</a></div><div class="ttdeci">std::map&lt; std::string, IBlock * &gt; name_to_block_map_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:25</div></div>
+<div class="ttc" id="classIBlock_html_aff3235bae8a57563c048e9477c0350f7"><div class="ttname"><a href="../../d2/de8/classIBlock.html#aff3235bae8a57563c048e9477c0350f7">IBlock::save_to_ptree</a></div><div class="ttdeci">virtual void save_to_ptree(boost::property_tree::ptree &amp;pt, std::string where)</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:54</div></div>
+<div class="ttc" id="classIBlock_html_aa4661469814185839d6b12be3d6058da"><div class="ttname"><a href="../../d2/de8/classIBlock.html#aa4661469814185839d6b12be3d6058da">IBlock::IBlock</a></div><div class="ttdeci">IBlock(std::string s)</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:61</div></div>
+<div class="ttc" id="classTPortIn_html"><div class="ttname"><a href="../../d6/dd8/classTPortIn.html">TPortIn</a></div><div class="ttdoc">Класс входного порта </div><div class="ttdef"><b>Definition:</b> TPortIn.hpp:17</div></div>
+<div class="ttc" id="classIBlock_html_a45a967cf16bff6ef4e3111e7b4c41606"><div class="ttname"><a href="../../d2/de8/classIBlock.html#a45a967cf16bff6ef4e3111e7b4c41606">IBlock::get_out_ports_list</a></div><div class="ttdeci">virtual out_port_list_t &amp; get_out_ports_list()=0</div></div>
+<div class="ttc" id="classIPort_html"><div class="ttname"><a href="../../d3/dd0/classIPort.html">IPort</a></div><div class="ttdoc">абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)...</div><div class="ttdef"><b>Definition:</b> IPort.hpp:29</div></div>
+<div class="ttc" id="classIBlock_html_ae29007d5e0b822063a05ddd930b75067"><div class="ttname"><a href="../../d2/de8/classIBlock.html#ae29007d5e0b822063a05ddd930b75067">IBlock::get_name</a></div><div class="ttdeci">virtual std::string get_name()</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:59</div></div>
+<div class="ttc" id="IBlock_8hpp_html_a38502c1ee24cbcc26f94b945684b3547"><div class="ttname"><a href="../../d1/d6b/IBlock_8hpp.html#a38502c1ee24cbcc26f94b945684b3547">in_port_list_t</a></div><div class="ttdeci">std::list&lt; TPortIn * &gt; in_port_list_t</div><div class="ttdef"><b>Definition:</b> IBlock.hpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
