@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Класс TDataVector</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="../../inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="../../functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="../../d8/dcf/classTDataVector-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс TDataVector</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d1/d87/TDataVector_8hpp_source.html">TDataVector.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:TDataVector:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d09/classTDataVector__inherit__graph.png" border="0" usemap="#TDataVector_inherit__map" alt="Inheritance graph"/></div>
+<map name="TDataVector_inherit__map" id="TDataVector_inherit__map">
+<area shape="rect" id="node2" href="../../da/ded/classIData.html" title="IData" alt="" coords="26,5,81,32"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса TDataVector:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d91/classTDataVector__coll__graph.png" border="0" usemap="#TDataVector_coll__map" alt="Collaboration graph"/></div>
+<map name="TDataVector_coll__map" id="TDataVector_coll__map">
+<area shape="rect" id="node2" href="../../da/ded/classIData.html" title="IData" alt="" coords="26,5,81,32"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab8c9117a4e9e49195825aeb9931fe3de"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#ab8c9117a4e9e49195825aeb9931fe3de">get_dim_count</a> ()</td></tr>
+<tr class="separator:ab8c9117a4e9e49195825aeb9931fe3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a87a77b1602e1a0ce7dd29b9f8c563"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#ac8a87a77b1602e1a0ce7dd29b9f8c563">get_dim</a> (int dim_idx)</td></tr>
+<tr class="separator:ac8a87a77b1602e1a0ce7dd29b9f8c563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8afbae83f571b9de7c047dc4cb3337"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#aaa8afbae83f571b9de7c047dc4cb3337">get_ptr_to_dump</a> ()</td></tr>
+<tr class="separator:aaa8afbae83f571b9de7c047dc4cb3337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ce0b9cf1f30e7a7725d1cda82033ea"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#a63ce0b9cf1f30e7a7725d1cda82033ea">get_item</a> (int indexes_array[], int array_cnt)</td></tr>
+<tr class="separator:a63ce0b9cf1f30e7a7725d1cda82033ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3534189133cb5e1698429c64320a5303"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#a3534189133cb5e1698429c64320a5303">set_item</a> (int indexes_array[], int array_cnt, <a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> data)</td></tr>
+<tr class="separator:a3534189133cb5e1698429c64320a5303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e11a6a973b2f1f8431a318b115d0b2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#a56e11a6a973b2f1f8431a318b115d0b2">~TDataVector</a> ()</td></tr>
+<tr class="separator:a56e11a6a973b2f1f8431a318b115d0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9b410977f40b3617de78138b52dd20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#a7f9b410977f40b3617de78138b52dd20">TDataVector</a> (int size)</td></tr>
+<tr class="separator:a7f9b410977f40b3617de78138b52dd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c0d9b484a113c14d98d444902f487a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#ab3c0d9b484a113c14d98d444902f487a">TDataVector</a> (<a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> *data, int array_cnt)</td></tr>
+<tr class="separator:ab3c0d9b484a113c14d98d444902f487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb41611f3b0255fcbe397851f608c44b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/ded/classIData.html">IData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/classTDataVector.html#acb41611f3b0255fcbe397851f608c44b">clone</a> ()</td></tr>
+<tr class="separator:acb41611f3b0255fcbe397851f608c44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIData"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIData')"><img src="../../closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="../../da/ded/classIData.html">IData</a></td></tr>
+<tr class="memitem:a7cb8a145727c359431c9e8d345056a12 inherit pub_methods_classIData"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/ded/classIData.html#a7cb8a145727c359431c9e8d345056a12">inc_index</a> (int indexes_array[], int array_cnt)</td></tr>
+<tr class="separator:a7cb8a145727c359431c9e8d345056a12 inherit pub_methods_classIData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab00b665b5b0a8de954a0cdd0585f19 inherit pub_methods_classIData"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/ded/classIData.html#a1ab00b665b5b0a8de954a0cdd0585f19">is_compatible</a> (<a class="el" href="../../da/ded/classIData.html">IData</a> &amp;other_data)</td></tr>
+<tr class="separator:a1ab00b665b5b0a8de954a0cdd0585f19 inherit pub_methods_classIData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2047898e39860029b4ed19c33b9ee59e inherit pub_methods_classIData"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/ded/classIData.html#a2047898e39860029b4ed19c33b9ee59e">~IData</a> ()</td></tr>
+<tr class="separator:a2047898e39860029b4ed19c33b9ee59e inherit pub_methods_classIData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fd2d8c81d6a34679ebc3222d8339a2 inherit pub_methods_classIData"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/ded/classIData.html#a75fd2d8c81d6a34679ebc3222d8339a2">IData</a> ()</td></tr>
+<tr class="separator:a75fd2d8c81d6a34679ebc3222d8339a2 inherit pub_methods_classIData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a56e11a6a973b2f1f8431a318b115d0b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TDataVector::~TDataVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f9b410977f40b3617de78138b52dd20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TDataVector::TDataVector </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3c0d9b484a113c14d98d444902f487a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TDataVector::TDataVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>array_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="acb41611f3b0255fcbe397851f608c44b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../da/ded/classIData.html">IData</a>* TDataVector::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../da/ded/classIData.html#a93fc6ad0bfe49beb6e69fb0ae56f1b26">IData</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8a87a77b1602e1a0ce7dd29b9f8c563"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int TDataVector::get_dim </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dim_idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../da/ded/classIData.html#a68a8cda74154115e2d1a61390ffa6ba5">IData</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8c9117a4e9e49195825aeb9931fe3de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int TDataVector::get_dim_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../da/ded/classIData.html#abe1afa9e7e355ba39a7bf00ffcefd5e5">IData</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63ce0b9cf1f30e7a7725d1cda82033ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> TDataVector::get_item </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexes_array</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>array_cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../da/ded/classIData.html#a39a53f1382c050f32bf89c752f87e65d">IData</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa8afbae83f571b9de7c047dc4cb3337"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a>* TDataVector::get_ptr_to_dump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../da/ded/classIData.html#a01f926cfd740d4c75f3db3a884d14ebb">IData</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3534189133cb5e1698429c64320a5303"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TDataVector::set_item </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexes_array</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>array_cnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="../../da/ded/classIData.html#a806388d754dc828dea73720e1872157f">IData</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>/home/tminnigaliev/tmp3/n2/code/n2/src/<a class="el" href="../../d1/d87/TDataVector_8hpp_source.html">TDataVector.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

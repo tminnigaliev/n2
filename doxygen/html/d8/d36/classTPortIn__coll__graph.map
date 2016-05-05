@@ -1,0 +1,7 @@
+<map id="TPortIn" name="TPortIn">
+<area shape="rect" id="node2" href="$d3/dd0/classIPort.html" title="абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)..." alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node3" href="$d9/d75/classTPortOut.html" title="Класс выходного порта " alt="" coords="68,171,143,197"/>
+<area shape="rect" id="node4" href="$dd/dec/classTData.html" title="TData" alt="" coords="80,81,139,108"/>
+<area shape="rect" id="node5" href="$da/ded/classIData.html" title="IData" alt="" coords="82,5,137,32"/>
+<area shape="rect" id="node6" href="$d2/de8/classIBlock.html" title="абстрактный предок всех блоков. " alt="" coords="168,171,227,197"/>
+</map>

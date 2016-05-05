@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Файл /home/tminnigaliev/tmp3/n2/code/n2/src/ut_compnet.cpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл ut_compnet.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;boost/test/minimal.hpp&gt;</code><br />
+<code>#include &quot;IBasicBlock.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для ut_compnet.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d50/ut__compnet_8cpp__incl.png" border="0" usemap="#_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2ut__compnet_8cpp" alt=""/></div>
+<map name="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2ut__compnet_8cpp" id="_2home_2tminnigaliev_2tmp3_2n2_2code_2n2_2src_2ut__compnet_8cpp">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a9d32ffc35c500a047796aa3650ca3cd5"><td class="memItemLeft" align="right" valign="top">IBasicBlock &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a9d32ffc35c500a047796aa3650ca3cd5">CreateNet</a> ()</td></tr>
+<tr class="separator:a9d32ffc35c500a047796aa3650ca3cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea0a12e7cf97bf6e09ce8f7600f2d7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a8ea0a12e7cf97bf6e09ce8f7600f2d7d">CheckSavingInt</a> (TExClass1 *c1_1, TExClass1 *c1_2)</td></tr>
+<tr class="separator:a8ea0a12e7cf97bf6e09ce8f7600f2d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167b7e80a36f5023ed8519d65c29402f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a167b7e80a36f5023ed8519d65c29402f">CheckSavingInt</a> (TExClass2 *c2_1, TExClass2 *c2_2)</td></tr>
+<tr class="separator:a167b7e80a36f5023ed8519d65c29402f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63fa5707c58e31ab3169b017b32003f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#ad63fa5707c58e31ab3169b017b32003f">CheckSavingArray</a> (TExClass2 *c2_1, TExClass2 *c2_2)</td></tr>
+<tr class="separator:ad63fa5707c58e31ab3169b017b32003f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72f33ce009f5a67948cd25acfb25871"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#af72f33ce009f5a67948cd25acfb25871">CheckSavingStruct</a> (TExClass2 *c2_1, TExClass2 *c2_2)</td></tr>
+<tr class="separator:af72f33ce009f5a67948cd25acfb25871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409c3ddf164e217cdda00f13aa53ecd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a409c3ddf164e217cdda00f13aa53ecd4">CheckSavingIntPtr</a> (TExClass2 *c2_1, TExClass2 *c2_2)</td></tr>
+<tr class="separator:a409c3ddf164e217cdda00f13aa53ecd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fa53769a1aa27df779d738f01897c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#ae5fa53769a1aa27df779d738f01897c7">CheckSavingIntPtrHang</a> (TExClass2 *c2_1, TExClass2 *c2_2)</td></tr>
+<tr class="separator:ae5fa53769a1aa27df779d738f01897c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6acf78ef6a96424eea2bccd5a86d506"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#af6acf78ef6a96424eea2bccd5a86d506">CheckSavingIntPtrNull</a> (TExClass2 *c2_1, TExClass2 *c2_2)</td></tr>
+<tr class="separator:af6acf78ef6a96424eea2bccd5a86d506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758c36a5d2aac9c32f898c076d0fef1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a758c36a5d2aac9c32f898c076d0fef1b">CheckSavingIntPtrFixed</a> (TExClass2 *c2_1, TExClass2 *c2_2)</td></tr>
+<tr class="separator:a758c36a5d2aac9c32f898c076d0fef1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c41b7275f7947d3712621dfaa3105e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#ae6c41b7275f7947d3712621dfaa3105e">CheckSavingPtrToClass</a> (TExClass1 *c1_1, TExClass1 *c1_2)</td></tr>
+<tr class="separator:ae6c41b7275f7947d3712621dfaa3105e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f520e6ae5caabb524bd2b106c810c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a25f520e6ae5caabb524bd2b106c810c6">CheckSavingRefToClass</a> (TExClass1 *c1_1, TExClass1 *c1_2)</td></tr>
+<tr class="separator:a25f520e6ae5caabb524bd2b106c810c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada48afb844a914acf64bd787b0178971"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#ada48afb844a914acf64bd787b0178971">CheckSavingDescendantClassInstance</a> (TExClass4 *c4_1, TExClass4 *c4_2)</td></tr>
+<tr class="separator:ada48afb844a914acf64bd787b0178971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65307bfd6944fc6ec85fb03e03bd7049"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a65307bfd6944fc6ec85fb03e03bd7049">CheckSavingVirtualPublicDescendantClassInstance</a> (TExClass5 *c5_1, TExClass5 *c5_2)</td></tr>
+<tr class="separator:a65307bfd6944fc6ec85fb03e03bd7049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e926c6d48feb75bdce9c73fca2adf1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da8/ut__compnet_8cpp.html#a3e926c6d48feb75bdce9c73fca2adf1c">test_main</a> (int, char *[])</td></tr>
+<tr class="separator:a3e926c6d48feb75bdce9c73fca2adf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ad63fa5707c58e31ab3169b017b32003f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingArray </td>
+          <td>(</td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет, что array-и сохраняются корректно в TExClass2 </p>
+
+</div>
+</div>
+<a class="anchor" id="ada48afb844a914acf64bd787b0178971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingDescendantClassInstance </td>
+          <td>(</td>
+          <td class="paramtype">TExClass4 *&#160;</td>
+          <td class="paramname"><em>c4_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass4 *&#160;</td>
+          <td class="paramname"><em>c4_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ea0a12e7cf97bf6e09ce8f7600f2d7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingInt </td>
+          <td>(</td>
+          <td class="paramtype">TExClass1 *&#160;</td>
+          <td class="paramname"><em>c1_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass1 *&#160;</td>
+          <td class="paramname"><em>c1_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет, что int-ы сохраняются корректно в TExClass1 </p>
+
+</div>
+</div>
+<a class="anchor" id="a167b7e80a36f5023ed8519d65c29402f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingInt </td>
+          <td>(</td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет, что int-ы сохраняются корректно в TExClass2 </p>
+
+</div>
+</div>
+<a class="anchor" id="a409c3ddf164e217cdda00f13aa53ecd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingIntPtr </td>
+          <td>(</td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет, что сохраняется корректно int* </p>
+
+</div>
+</div>
+<a class="anchor" id="a758c36a5d2aac9c32f898c076d0fef1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingIntPtrFixed </td>
+          <td>(</td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет корректность сохранения фиксированных указателей на int </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5fa53769a1aa27df779d738f01897c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingIntPtrHang </td>
+          <td>(</td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет корректность сохранения висячих указателей на int </p>
+
+</div>
+</div>
+<a class="anchor" id="af6acf78ef6a96424eea2bccd5a86d506"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingIntPtrNull </td>
+          <td>(</td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет корректность сохранения нулевых указателей на int </p>
+
+</div>
+</div>
+<a class="anchor" id="ae6c41b7275f7947d3712621dfaa3105e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingPtrToClass </td>
+          <td>(</td>
+          <td class="paramtype">TExClass1 *&#160;</td>
+          <td class="paramname"><em>c1_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass1 *&#160;</td>
+          <td class="paramname"><em>c1_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет корректность сохранения указателей на другие классы </p>
+
+</div>
+</div>
+<a class="anchor" id="a25f520e6ae5caabb524bd2b106c810c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingRefToClass </td>
+          <td>(</td>
+          <td class="paramtype">TExClass1 *&#160;</td>
+          <td class="paramname"><em>c1_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass1 *&#160;</td>
+          <td class="paramname"><em>c1_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет корректность сохранения ссылок на другие классы </p>
+
+</div>
+</div>
+<a class="anchor" id="af72f33ce009f5a67948cd25acfb25871"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingStruct </td>
+          <td>(</td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass2 *&#160;</td>
+          <td class="paramname"><em>c2_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверяет, что struct-ы сохраняются корректно в TExClass2 </p>
+
+</div>
+</div>
+<a class="anchor" id="a65307bfd6944fc6ec85fb03e03bd7049"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckSavingVirtualPublicDescendantClassInstance </td>
+          <td>(</td>
+          <td class="paramtype">TExClass5 *&#160;</td>
+          <td class="paramname"><em>c5_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TExClass5 *&#160;</td>
+          <td class="paramname"><em>c5_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d32ffc35c500a047796aa3650ca3cd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IBasicBlock&amp; CreateNet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Создаёт сеть для того, чтоб дальше можно было применять API библиотеки </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e926c6d48feb75bdce9c73fca2adf1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int test_main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname">[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция подменяет функцию int <a class="el" href="../../de/d97/ut_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main(int argc, char*argv[])</a> потому что это юнит-тест </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Класс TPortOut</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li><a href="../../classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="../../inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="../../functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="../../d5/d49/classTPortOut-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс TPortOut</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс выходного порта  
+ <a href="../../d9/d75/classTPortOut.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/d15/TPortOut_8hpp_source.html">TPortOut.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:TPortOut:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da6/classTPortOut__inherit__graph.png" border="0" usemap="#TPortOut_inherit__map" alt="Inheritance graph"/></div>
+<map name="TPortOut_inherit__map" id="TPortOut_inherit__map">
+<area shape="rect" id="node2" href="../../d3/dd0/classIPort.html" title="абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)..." alt="" coords="17,5,68,32"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса TPortOut:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d35/classTPortOut__coll__graph.png" border="0" usemap="#TPortOut_coll__map" alt="Collaboration graph"/></div>
+<map name="TPortOut_coll__map" id="TPortOut_coll__map">
+<area shape="rect" id="node2" href="../../d3/dd0/classIPort.html" title="абстрактный класс, специфицирующий общие свойства и методы всех портов (и входных и выходных)..." alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node3" href="../../dd/dec/classTData.html" title="TData" alt="" coords="80,81,139,108"/>
+<area shape="rect" id="node4" href="../../da/ded/classIData.html" title="IData" alt="" coords="82,5,137,32"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8a94ec8de69f4b1e9b8323175b33a219"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#a8a94ec8de69f4b1e9b8323175b33a219">TPortOut</a> (<a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *my_block, std::string sname, <a class="el" href="../../da/ded/classIData.html">IData</a> &amp;default_value=<a class="el" href="../../d9/d75/classTPortOut.html#a85dd64b88604f351e083b58a5a38ef23">std_default_value</a>)</td></tr>
+<tr class="separator:a8a94ec8de69f4b1e9b8323175b33a219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce6af7a922bfbfd316b75fecf378715"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/ded/classIData.html">IData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#adce6af7a922bfbfd316b75fecf378715">get_value</a> (const int32_t time, const int32_t ttl, std::string where)</td></tr>
+<tr class="separator:adce6af7a922bfbfd316b75fecf378715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0018b313f6aaa83281ac8abfd09152"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/ded/classIData.html">IData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#aac0018b313f6aaa83281ac8abfd09152">get_sample_value</a> ()</td></tr>
+<tr class="separator:aac0018b313f6aaa83281ac8abfd09152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed18f251b460d1fd13c394c758d6098"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/dd0/classIPort.html">IPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#aaed18f251b460d1fd13c394c758d6098">get_other_port</a> ()</td></tr>
+<tr class="separator:aaed18f251b460d1fd13c394c758d6098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea18b2f84ec5f0f238c2a7863576276"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">PortType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#a9ea18b2f84ec5f0f238c2a7863576276">get_port_type</a> ()</td></tr>
+<tr class="separator:a9ea18b2f84ec5f0f238c2a7863576276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21554f0ffe2e7f6a16dc9bace03a5de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#ac21554f0ffe2e7f6a16dc9bace03a5de">get_block</a> ()</td></tr>
+<tr class="separator:ac21554f0ffe2e7f6a16dc9bace03a5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f6ad79c17696e2cefb0873eeb8b433"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#a32f6ad79c17696e2cefb0873eeb8b433">pipeline</a> (<a class="el" href="../../d6/dd8/classTPortIn.html">TPortIn</a> *other_port)</td></tr>
+<tr class="separator:a32f6ad79c17696e2cefb0873eeb8b433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad394e75d4b1e4c2eaffe4db27d6a02de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#ad394e75d4b1e4c2eaffe4db27d6a02de">assign_inner</a> (<a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *other_port)</td></tr>
+<tr class="separator:ad394e75d4b1e4c2eaffe4db27d6a02de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bf7a8008214782564ab3514a0218c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#a03bf7a8008214782564ab3514a0218c2">unassign_inner</a> ()</td></tr>
+<tr class="separator:a03bf7a8008214782564ab3514a0218c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ff8e9b7e72e96b3ffc2322a3e45a46"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#ad9ff8e9b7e72e96b3ffc2322a3e45a46">inner_assigned</a> ()</td></tr>
+<tr class="separator:ad9ff8e9b7e72e96b3ffc2322a3e45a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b82bea46a56bdcad5ed8bd97914342"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#ac3b82bea46a56bdcad5ed8bd97914342">assign_outer</a> (<a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *other_port)</td></tr>
+<tr class="separator:ac3b82bea46a56bdcad5ed8bd97914342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41270824164df55a92f503af3b36b820"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#a41270824164df55a92f503af3b36b820">unassign_outer</a> ()</td></tr>
+<tr class="separator:a41270824164df55a92f503af3b36b820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf183a57d4c20a2f78826b5a0d87d61"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#a7bf183a57d4c20a2f78826b5a0d87d61">outer_assigned</a> ()</td></tr>
+<tr class="separator:a7bf183a57d4c20a2f78826b5a0d87d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIPort"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIPort')"><img src="../../closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="../../d3/dd0/classIPort.html">IPort</a></td></tr>
+<tr class="memitem:a5a061f254ac6fe039103a9179a836a0c inherit pub_methods_classIPort"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd0/classIPort.html#a5a061f254ac6fe039103a9179a836a0c">get_name</a> ()</td></tr>
+<tr class="separator:a5a061f254ac6fe039103a9179a836a0c inherit pub_methods_classIPort"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75813a34f3b1fac281485ec6fa5c9d1 inherit pub_methods_classIPort"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd0/classIPort.html#ae75813a34f3b1fac281485ec6fa5c9d1">get_id</a> ()</td></tr>
+<tr class="separator:ae75813a34f3b1fac281485ec6fa5c9d1 inherit pub_methods_classIPort"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2bc9b721b8e982ac92ca235afa0438 inherit pub_methods_classIPort"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd0/classIPort.html#adf2bc9b721b8e982ac92ca235afa0438">IPort</a> (std::string name)</td></tr>
+<tr class="separator:adf2bc9b721b8e982ac92ca235afa0438 inherit pub_methods_classIPort"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd4c3c4b4538545c570b4d5f4865141 inherit pub_methods_classIPort"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd0/classIPort.html#a6cd4c3c4b4538545c570b4d5f4865141">~IPort</a> ()</td></tr>
+<tr class="separator:a6cd4c3c4b4538545c570b4d5f4865141 inherit pub_methods_classIPort"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a85dd64b88604f351e083b58a5a38ef23"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dec/classTData.html">TData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d75/classTPortOut.html#a85dd64b88604f351e083b58a5a38ef23">std_default_value</a></td></tr>
+<tr class="separator:a85dd64b88604f351e083b58a5a38ef23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс выходного порта </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a8a94ec8de69f4b1e9b8323175b33a219"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TPortOut::TPortOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/de8/classIBlock.html">IBlock</a> *&#160;</td>
+          <td class="paramname"><em>my_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>sname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/ded/classIData.html">IData</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em> = <code><a class="el" href="../../d9/d75/classTPortOut.html#a85dd64b88604f351e083b58a5a38ef23">std_default_value</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="ad394e75d4b1e4c2eaffe4db27d6a02de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TPortOut::assign_inner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *&#160;</td>
+          <td class="paramname"><em>other_port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3b82bea46a56bdcad5ed8bd97914342"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TPortOut::assign_outer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d75/classTPortOut.html">TPortOut</a> *&#160;</td>
+          <td class="paramname"><em>other_port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac21554f0ffe2e7f6a16dc9bace03a5de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d2/de8/classIBlock.html">IBlock</a>* TPortOut::get_block </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>возвращает указатель на кирпичик, которому этот порт принадлежит </p>
+
+<p>Замещает <a class="el" href="../../d3/dd0/classIPort.html#a2cf8188f4f73c5d923c1d6b40faf6600">IPort</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaed18f251b460d1fd13c394c758d6098"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d3/dd0/classIPort.html">IPort</a>* TPortOut::get_other_port </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>возвращает порт другой стороны соединения (только для входных портов, для выходных возвращает NULL, потому что на один выходной порт может приходиться более одного входного, поэтому считаем, что просить выходной порт назвать его порт-приёмник - это некорректный запрос и всегда возвращаем NULL) </p>
+
+<p>Замещает <a class="el" href="../../d3/dd0/classIPort.html#a2b411f6cb94859b8306265978652a478">IPort</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ea18b2f84ec5f0f238c2a7863576276"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d2/d4f/IPort_8hpp.html#a7674c329addda8fbe6176bbbf25c8b21">PortType</a> TPortOut::get_port_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>возвращает тип порта (ввод или вывод) </p>
+
+<p>Замещает <a class="el" href="../../d3/dd0/classIPort.html#abab5e015ecfdbabf62672fe52fd6ca8a">IPort</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac0018b313f6aaa83281ac8abfd09152"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../da/ded/classIData.html">IData</a>&amp; TPortOut::get_sample_value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>возвращает значение, смысл которого, хранить информацию о формате данных, т.е. этот метод используется при соединениях портов для контроля правильности соединения </p>
+
+<p>Замещает <a class="el" href="../../d3/dd0/classIPort.html#aafe4b49a7936a1731405a328e17d9ba0">IPort</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adce6af7a922bfbfd316b75fecf378715"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/ded/classIData.html">IData</a> &amp; TPortOut::get_value </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramname"><em>ttl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>возвращает забуферизированное (или расчитывает и буферизирует) значение для времени time ttl содержит значение для максимальной глубины рекурсии при вычислении </p>
+
+<p>Замещает <a class="el" href="../../d3/dd0/classIPort.html#a0f083ca76c78fbc9b961485d177fd546">IPort</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9ff8e9b7e72e96b3ffc2322a3e45a46"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TPortOut::inner_assigned </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7bf183a57d4c20a2f78826b5a0d87d61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TPortOut::outer_assigned </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a32f6ad79c17696e2cefb0873eeb8b433"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TPortOut::pipeline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/dd8/classTPortIn.html">TPortIn</a> *&#160;</td>
+          <td class="paramname"><em>other_port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03bf7a8008214782564ab3514a0218c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TPortOut::unassign_inner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41270824164df55a92f503af3b36b820"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TPortOut::unassign_outer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a85dd64b88604f351e083b58a5a38ef23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dec/classTData.html">TData</a> TPortOut::std_default_value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>/home/tminnigaliev/tmp3/n2/code/n2/src/<a class="el" href="../../d1/d15/TPortOut_8hpp_source.html">TPortOut.hpp</a></li>
+<li>/home/tminnigaliev/tmp3/n2/code/n2/src/<a class="el" href="../../d8/d9f/TPortOut_8cpp.html">TPortOut.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<HTML>
+<TITLE> SCM проекта N2 </TITLE>
+<BODY>
+SCM (software configuration management) проекта N2 <br>
+
+В репозитарии есть 3 ветки:
+<table border="2">
+<tr> <td> Название ветви </td> <td> Назначение </td> </tr>
+<tr> <td> master </td> <td> хранит скрипты для выкачивания кода и онлайн-документации </td> </tr>
+<tr> <td> code </td> <td> хранит код на языке С++ и конф.файлы и исходники для Doxygen-a </td> </tr>
+<tr> <td> gh-pages </td> <td> хранит онлайн документацию, сгенерированную Doxygen-ом и вэб-странички написанные от руки </td> </tr>
+</table><br>
+<br>
+Как с ними работать:<br>
+1) git clone https://github.com/tminnigaliev/n2.git:<br>
+<table border="2"><tr><td>
+<pre>
+user@machine ~/tmp1
+$ git clone https://github.com/tminnigaliev/n2.git
+Cloning into 'n2'...
+remote: Counting objects: 1217, done.
+remote: Compressing objects: 100% (643/643), done.
+remote: Total 1217 (delta 479), reused 1133 (delta 398), pack-reused 0
+Receiving objects: 100% (1217/1217), 6.42 MiB | 1.06 MiB/s, done.
+Resolving deltas: 100% (479/479), done.
+Checking connectivity... done.
+
+user@machine ~/tmp1
+$ ls
+n2
+
+user@machine ~/tmp1
+$ cd n2/
+
+user@machine ~/tmp1/n2
+$ ls
+co.sh  doc_ci.sh  doc_gen.sh  README.md </pre>
+user@machine ~/tmp1/n2
+</td></tr></table><br>
+
+2) cd n2<br>
+3) ./co.sh<br>
+3.1 в code/n2/ копируем boost_1_60_0<br>
+<br>
+В результате должна появиться такая структура директорий:
+n2
+ +
+4) Для изменения кода программы или онлайн-документации вносим изменения в code/n2/
+5) 
+
+</BODY>
+</HTML>

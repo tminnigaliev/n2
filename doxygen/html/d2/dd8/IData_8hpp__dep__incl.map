@@ -1,0 +1,24 @@
+<map id="/home/tminnigaliev/tmp3/n2/code/n2/src/IData.hpp" name="/home/tminnigaliev/tmp3/n2/code/n2/src/IData.hpp">
+<area shape="rect" id="node2" href="$d1/d6b/IBlock_8hpp.html" title="описание интерфейса (абстрактного класса) IBlock. " alt="" coords="300,317,445,373"/>
+<area shape="rect" id="node17" href="$d2/d4f/IPort_8hpp.html" title="описание интерфейса (абстрактного класса) IPort. " alt="" coords="529,109,675,165"/>
+<area shape="rect" id="node19" href="$db/d92/TPortIn_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortIn.hpp" alt="" coords="521,317,667,373"/>
+<area shape="rect" id="node21" href="$d2/dc7/TData_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TData.hpp" alt="" coords="988,109,1133,165"/>
+<area shape="rect" id="node22" href="$d1/d87/TDataVector_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TDataVector.hpp" alt="" coords="1395,525,1540,581"/>
+<area shape="rect" id="node23" href="$d7/d0b/TDataMatrix_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TDataMatrix.hpp" alt="" coords="101,213,247,269"/>
+<area shape="rect" id="node3" href="$df/ded/TBlock_8hpp.html" title="описание класса TBlock (может быть сложным блоком или предком простого блока) " alt="" coords="521,421,667,477"/>
+<area shape="rect" id="node15" href="$dc/d85/TPortIn_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortIn.cpp" alt="" coords="131,421,276,477"/>
+<area shape="rect" id="node16" href="$d8/d9f/TPortOut_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortOut.cpp" alt="" coords="300,421,445,477"/>
+<area shape="rect" id="node4" href="$d4/dd7/TConstBlock_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TConstBlock.hpp" alt="" coords="1123,525,1268,581"/>
+<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/main.cpp" alt="" coords="1203,629,1348,685"/>
+<area shape="rect" id="node6" href="$de/d97/ut_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/ut\l/ut.cpp" alt="" coords="959,629,1098,685"/>
+<area shape="rect" id="node7" href="$d4/df1/TMultiplierBlock_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TMultiplierBlock.hpp" alt="" coords="901,525,1047,581"/>
+<area shape="rect" id="node8" href="$db/de6/TBlock_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TBlock.cpp" alt="" coords="520,525,665,581"/>
+<area shape="rect" id="node9" href="$d2/de4/TKohonen_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TKohonen.cpp" alt="" coords="32,629,177,685"/>
+<area shape="rect" id="node10" href="$de/dce/TKohonen_8hpp.html" title="описание класса для реализации сети Кохонена " alt="" coords="5,525,151,581"/>
+<area shape="rect" id="node11" href="$d5/dd7/TReaderFromOctMatrix_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TReaderFromOctMatrix.hpp" alt="" coords="689,525,877,581"/>
+<area shape="rect" id="node13" href="$da/d5e/TWriterToOctMatrix_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TWriterToOctMatrix.hpp" alt="" coords="227,525,393,581"/>
+<area shape="rect" id="node12" href="$d3/d86/TReaderFromOctMatrix_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TReaderFromOctMatrix.cpp" alt="" coords="689,629,877,685"/>
+<area shape="rect" id="node14" href="$da/dd2/TWriterToOctMatrix_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TWriterToOctMatrix.cpp" alt="" coords="227,629,393,685"/>
+<area shape="rect" id="node18" href="$db/d00/IPort_8cpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/IPort.cpp" alt="" coords="529,213,675,269"/>
+<area shape="rect" id="node20" href="$d1/d15/TPortOut_8hpp.html" title="/home/tminnigaliev\l/tmp3/n2/code/n2/src\l/TPortOut.hpp" alt="" coords="772,213,917,269"/>
+</map>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов: Исходный файл /home/tminnigaliev/tmp3/n2/code/n2/src/TData.hpp</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Программная библиотека, позволяющая реализовать вычислительную сеть для симуляции сетей из нейроноподобных элементов
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TData.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/dc7/TData_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TDATA_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TDATA_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/dfd/config_8hpp.html">config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/dce/IData_8hpp.html">IData.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/dec/classTData.html">TData</a>: <span class="keyword">public</span> <a class="code" href="../../da/ded/classIData.html">IData</a>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a>               value;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#ac7108decdf6b48a97a8d3f5acf734112">   11</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span>             <a class="code" href="../../dd/dec/classTData.html#ac7108decdf6b48a97a8d3f5acf734112">get_dim_count</a>() {<span class="keywordflow">return</span> 1;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#aa95e1ced982df01a7ffd4f061367cef7">   12</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span>             <a class="code" href="../../dd/dec/classTData.html#aa95e1ced982df01a7ffd4f061367cef7">get_dim</a>(<span class="keywordtype">int</span> dim_idx) {<span class="keywordflow">if</span> (dim_idx == 0) <span class="keywordflow">return</span> 1; <span class="keywordflow">else</span> <span class="keywordflow">return</span> 0;};</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#aea43d89694459e28f2d6131b458de324">   13</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a>*<a class="code" href="../../dd/dec/classTData.html#aea43d89694459e28f2d6131b458de324">get_ptr_to_dump</a>() {<span class="keywordflow">return</span> &amp;value;};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="comment">//virtual int           inc_index(int indexes_array[], int array_cnt); inherited from IData</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#aeb04401141e9064185ffc9dd47d46a21">   15</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> <a class="code" href="../../dd/dec/classTData.html#aeb04401141e9064185ffc9dd47d46a21">get_item</a>(<span class="keywordtype">int</span> indexes_array[], <span class="keywordtype">int</span> array_cnt){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                };</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#abef770eefa1073b71a781daf302f115c">   18</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>            <a class="code" href="../../dd/dec/classTData.html#abef770eefa1073b71a781daf302f115c">set_item</a>(<span class="keywordtype">int</span> indexes_array[], <span class="keywordtype">int</span> array_cnt, <a class="code" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> data){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                        value = data;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                };</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#ad9887299d70e704c4ec2e2292f0eef38">   21</a></span>&#160;        <span class="keyword">virtual</span>                 <a class="code" href="../../dd/dec/classTData.html#ad9887299d70e704c4ec2e2292f0eef38">~TData</a>(){};</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#aae78e6400e1d1bf28b25fecc8deb0d3d">   22</a></span>&#160;                                <a class="code" href="../../dd/dec/classTData.html#aae78e6400e1d1bf28b25fecc8deb0d3d">TData</a>(<a class="code" href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a> value):value(value){};</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dd/dec/classTData.html#ad4152f045ec3cbd6595fd68ef786aadf">   23</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../da/ded/classIData.html">IData</a>*          <a class="code" href="../../dd/dec/classTData.html#ad4152f045ec3cbd6595fd68ef786aadf">clone</a>(){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                        <a class="code" href="../../dd/dec/classTData.html">TData</a> * tmp = <span class="keyword">new</span> <a class="code" href="../../dd/dec/classTData.html#aae78e6400e1d1bf28b25fecc8deb0d3d">TData</a>(value);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classTData_html_abef770eefa1073b71a781daf302f115c"><div class="ttname"><a href="../../dd/dec/classTData.html#abef770eefa1073b71a781daf302f115c">TData::set_item</a></div><div class="ttdeci">virtual void set_item(int indexes_array[], int array_cnt, data_type data)</div><div class="ttdef"><b>Definition:</b> TData.hpp:18</div></div>
+<div class="ttc" id="IData_8hpp_html"><div class="ttname"><a href="../../d1/dce/IData_8hpp.html">IData.hpp</a></div></div>
+<div class="ttc" id="classTData_html"><div class="ttname"><a href="../../dd/dec/classTData.html">TData</a></div><div class="ttdef"><b>Definition:</b> TData.hpp:7</div></div>
+<div class="ttc" id="classTData_html_aa95e1ced982df01a7ffd4f061367cef7"><div class="ttname"><a href="../../dd/dec/classTData.html#aa95e1ced982df01a7ffd4f061367cef7">TData::get_dim</a></div><div class="ttdeci">virtual int get_dim(int dim_idx)</div><div class="ttdef"><b>Definition:</b> TData.hpp:12</div></div>
+<div class="ttc" id="classTData_html_aeb04401141e9064185ffc9dd47d46a21"><div class="ttname"><a href="../../dd/dec/classTData.html#aeb04401141e9064185ffc9dd47d46a21">TData::get_item</a></div><div class="ttdeci">virtual const data_type get_item(int indexes_array[], int array_cnt)</div><div class="ttdef"><b>Definition:</b> TData.hpp:15</div></div>
+<div class="ttc" id="config_8hpp_html"><div class="ttname"><a href="../../d8/dfd/config_8hpp.html">config.hpp</a></div><div class="ttdoc">здесь хранятся настройки проекта </div></div>
+<div class="ttc" id="classIData_html"><div class="ttname"><a href="../../da/ded/classIData.html">IData</a></div><div class="ttdef"><b>Definition:</b> IData.hpp:7</div></div>
+<div class="ttc" id="classTData_html_aea43d89694459e28f2d6131b458de324"><div class="ttname"><a href="../../dd/dec/classTData.html#aea43d89694459e28f2d6131b458de324">TData::get_ptr_to_dump</a></div><div class="ttdeci">virtual const data_type * get_ptr_to_dump()</div><div class="ttdef"><b>Definition:</b> TData.hpp:13</div></div>
+<div class="ttc" id="classTData_html_ad9887299d70e704c4ec2e2292f0eef38"><div class="ttname"><a href="../../dd/dec/classTData.html#ad9887299d70e704c4ec2e2292f0eef38">TData::~TData</a></div><div class="ttdeci">virtual ~TData()</div><div class="ttdef"><b>Definition:</b> TData.hpp:21</div></div>
+<div class="ttc" id="classTData_html_ac7108decdf6b48a97a8d3f5acf734112"><div class="ttname"><a href="../../dd/dec/classTData.html#ac7108decdf6b48a97a8d3f5acf734112">TData::get_dim_count</a></div><div class="ttdeci">virtual int get_dim_count()</div><div class="ttdef"><b>Definition:</b> TData.hpp:11</div></div>
+<div class="ttc" id="classTData_html_aae78e6400e1d1bf28b25fecc8deb0d3d"><div class="ttname"><a href="../../dd/dec/classTData.html#aae78e6400e1d1bf28b25fecc8deb0d3d">TData::TData</a></div><div class="ttdeci">TData(data_type value)</div><div class="ttdef"><b>Definition:</b> TData.hpp:22</div></div>
+<div class="ttc" id="config_8hpp_html_ab4fe8f524a850bfa4a988700450287da"><div class="ttname"><a href="../../d8/dfd/config_8hpp.html#ab4fe8f524a850bfa4a988700450287da">data_type</a></div><div class="ttdeci">int32_t data_type</div><div class="ttdef"><b>Definition:</b> config.hpp:17</div></div>
+<div class="ttc" id="classTData_html_ad4152f045ec3cbd6595fd68ef786aadf"><div class="ttname"><a href="../../dd/dec/classTData.html#ad4152f045ec3cbd6595fd68ef786aadf">TData::clone</a></div><div class="ttdeci">virtual IData * clone()</div><div class="ttdef"><b>Definition:</b> TData.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
