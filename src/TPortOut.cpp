@@ -70,7 +70,7 @@ IData& TPortOut::get_value(const int32_t time, const int32_t ttl, std::string wh
 #ifdef ERROR_ON_NEGATIVE_TIME
 		throw Tcnexception("Negative time: "+where);
 #else
-		return this->default_value;
+		return this->fdefault_value;
 #endif
 	}
 

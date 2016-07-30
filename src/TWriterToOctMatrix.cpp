@@ -4,7 +4,8 @@
 void TWriterToOctMatrix::write_header(uint32_t rows, uint32_t cols)
 {
 	std::ofstream header_file;
-	std::string header_file_name = filename+".hdr";
+	std::string extension(".hdr");
+	std::string header_file_name = filename+extension;
 	header_file.open(header_file_name.c_str(), std::ofstream::out | std::ofstream::trunc);
 	std::string s1("# Created by Octave 4.0.0, Sun Mar 06 16:39:31 2016 PST <TMINNIGALIEV-W7+tminnigaliev@tminnigaliev-w7>");
 	std::string s2("# name: "+get_name());

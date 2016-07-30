@@ -3,12 +3,14 @@
 #include "config.hpp"
 #include "TCnexception.hpp"
 #include <string>
+#include <iostream>
 
 class IData{
 public:
 	virtual	int		get_dim_count() = 0;
 	virtual	int		get_dim(int dim_idx) = 0;
 	virtual const data_type*get_ptr_to_dump() = 0;
+	virtual void		dump(std::ostream *outstream = &std::cout) = 0;
 	virtual int		inc_index(int indexes_array[], int array_cnt){
 					int i;
 					int dim_cnt = get_dim_count();

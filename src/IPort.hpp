@@ -61,8 +61,8 @@ public:
 	virtual uint32_t	get_id(){return this->id;};
 
 	/*! при конструировании порта обязательно задаются его имя и размерность */
-				IPort(std::string name):
-					name(name){this->id = IPort::id_autoinc++;};
+				IPort(std::string sname):
+					name(sname){this->id = IPort::id_autoinc++;};
 	virtual			~IPort(){};
 };
 

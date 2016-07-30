@@ -55,22 +55,22 @@ protected:
  */
 	IBlock			* block;
 private:
-	IData&			sample_data;
+	IData&			fsample_data;
 public:
-				TPortIn(IBlock * my_block, int32_t delay, std::string name, IData& sample_data = TPortOut::std_default_value):
-					IPort(name),
+				TPortIn(IBlock * my_block, int32_t delay, std::string sname, IData& sample_data = TPortOut::std_default_value):
+					IPort(sname),
 					assigned_inner_port(NULL),
 					assigned_outer_port(NULL),
 					other_port(NULL),
 					delay(delay+1),		//PortIn always delays by at least 1 tick
 					block(my_block),
-					sample_data(sample_data){};
+					fsample_data(sample_data){};
 
 	virtual			~TPortIn(){};
 	virtual PortType	get_port_type() {return PortType::PT_IN;};
 	virtual IPort		* get_other_port();
 	virtual IData&		get_value(const int32_t time, const int32_t ttl, std::string where);
-	virtual IData&		get_sample_value() {return sample_data;};
+	virtual IData&		get_sample_value() {return fsample_data;};
 	virtual IBlock		* get_block(){return block;};
 	virtual void		pipeline(TPortOut * other_port);
 	virtual void		unpipeline() {this->other_port = NULL;};

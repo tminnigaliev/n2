@@ -11,6 +11,13 @@ public:
 	virtual	int		get_dim_count() {return 1;};
 	virtual	int		get_dim(int dim_idx) {if (dim_idx == 0) return dim; else return 0;};
 	virtual const data_type*get_ptr_to_dump() {return values;};
+	virtual void 		dump(std::ostream *outstream = &std::cout) {
+					int i;
+					for (i = 0; i < dim; i++) {
+						*outstream << get_item(&i, 1) << "  ";
+					}
+					*outstream << std::endl;
+				}
 	//virtual int		inc_index(int indexes_array[], int array_cnt); inherited from IData
 	virtual const data_type	get_item(int indexes_array[], int array_cnt){
 					if (array_cnt == 1){

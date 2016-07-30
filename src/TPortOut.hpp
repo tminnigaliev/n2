@@ -16,17 +16,17 @@ private:
 	IBlock			* block;
 	TPortOut		* assigned_outer_port;
 	TPortOut		* assigned_inner_port;
-	IData&			default_value;
+	IData&			fdefault_value;
 public:
 				TPortOut(IBlock * my_block, std::string sname, IData& default_value = std_default_value):
 					IPort(sname),
 					block(my_block),
 					assigned_outer_port(NULL),
 					assigned_inner_port(NULL),
-					default_value(default_value){};
+					fdefault_value(default_value){};
 
 	virtual IData&		get_value(const int32_t time, const int32_t ttl, std::string where);
-	virtual IData&		get_sample_value() {return default_value;};
+	virtual IData&		get_sample_value() {return fdefault_value;};
 	virtual IPort		* get_other_port() {return NULL;};
 	virtual PortType	get_port_type() {return PortType::PT_OUT;};
 	virtual IBlock		* get_block(){return block;};

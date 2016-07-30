@@ -15,11 +15,11 @@ public:
 					if (port==this->get_out_port(out)) return *value;
 					else throw Tcnexception(where+": non-existing port requested");
 				};
-				TConstBlock(std::string sname, IData& value, std::string out="A"):
+				TConstBlock(std::string sname, IData& example_value, std::string out="A"):
 				TBlock(sname),
 				out(out),
-				value(value.clone()){
-					this->add_out_port(out, value);
+				value(example_value.clone()){
+					this->add_out_port(out, example_value);
 				};
 	virtual			~TConstBlock(){
 					this->remove_port(out);

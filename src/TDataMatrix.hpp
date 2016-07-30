@@ -2,6 +2,7 @@
 #define _TDATAMATRIX_HPP_
 #include "config.hpp"
 #include "IData.hpp"
+#include <iostream>
 
 class TDataMatrix: public IData{
 private:
@@ -12,6 +13,18 @@ public:
 	virtual	int		get_dim_count() {return 2;};
 	virtual	int		get_dim(int dim_idx) {if (dim_idx == 0) return rows; else if (dim_idx==1) return cols; else return 0;};
 	virtual const data_type*get_ptr_to_dump() {return values;};
+	virtual void 		dump(std::ostream *outstream = &std::cout) {
+					int i;
+					int j;
+					for (i = 0; i < rows; i++) {
+						for (j = 0; j < cols; j++) {
+							int indexes[] = {i,j};
+							*outstream << get_item(indexes, 2) << "  ";
+						}
+						*outstream << std::endl;
+					}
+					*outstream << std::endl;
+				}
 	//virtual int		inc_index(int indexes_array[], int array_cnt); inherited from IData
 	virtual const data_type	get_item(int indexes_array[], int array_cnt){
 					if (array_cnt == 1){

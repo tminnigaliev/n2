@@ -14,7 +14,9 @@
 #undef ERROR_ON_NEGATIVE_TIME
 
 //#define ERROR_ON_DETECTING_RECURSION
-typedef int32_t data_type;
-#define dt_one  (1024*1024)
+//typedef int32_t data_type;
+//#define dt_one  (1024*1024)
+typedef float data_type;
+#define dt_one 1.0
 
 #endif
