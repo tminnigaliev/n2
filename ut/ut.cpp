@@ -10,6 +10,7 @@
 #include "TDataVector.hpp"
 #include "TReaderFromOctMatrix.hpp"
 #include "TWriterToOctMatrix.hpp"
+#include "TKohonen.hpp"
 #include <cstdlib>
 using namespace std;
 
@@ -45,7 +46,7 @@ void test_001()
         int i = 0;
         for (t = 0; t < 10; t++)
         {
-                int value = port->get_value(t, 4, __func__).get_item(&i, 1);
+                data_type value = port->get_value(t, 4, __func__).get_item(&i, 1);
                 REQUIRE(value == 4);
         }
         PASSED;
@@ -76,7 +77,7 @@ void test_002()
 	int i = 0;
 	for (t = 0; t < 10; t++)
 	{
-		int value = cplx_b_port_b->get_value(t, 20, __func__).get_item(&i, 1);
+		data_type value = cplx_b_port_b->get_value(t, 20, __func__).get_item(&i, 1);
 		REQUIRE(value == 4);
 	}
 	PASSED;
@@ -129,7 +130,7 @@ void test_003()
 	int i = 0;
 	for (t = 0; t < 10; t++)
 	{
-		int value = cplx_b_port_a->get_value(t, 20, __func__).get_item(&i,1);
+		data_type value = cplx_b_port_a->get_value(t, 20, __func__).get_item(&i,1);
 		REQUIRE(value == 24); //because 6 * 4 == 24
 	}
 	PASSED;
@@ -182,7 +183,7 @@ void test_003()
 	int t;
 	for (t = 0; t < 10; t++)
 	{
-		int values[vector_size];
+		data_type values[vector_size];
 		int i;
 		for (i = 0; i < vector_size; i++){
 			values[i] = cplx_b_port_a->get_value(t, 20, __func__).get_item(&i,1);
@@ -236,7 +237,7 @@ void test_005()
 	int t;
 	for (t = 0; t < 10; t++)
 	{
-		int values[vector_size];
+		data_type values[vector_size];
 		int i;
 		for (i = 0; i < vector_size; i++){
 			values[i] = cplx_b_port_a->get_value(t, 20, __func__).get_item(&i,1);
@@ -257,7 +258,7 @@ void test_006()
 	TReaderFromOctMatrix matr_reader("reader", "data/a4x4real", 0, Vector4, "A");
 	for (t = 0; t < 4; t++)
 	{
-		int values[vector_size];
+		data_type values[vector_size];
 		int i;
 		for (i = 0; i < vector_size; i++){
 			values[i] = matr_reader.simulate_port_name(t,10,"A",__func__).get_item(&i,1);
@@ -326,6 +327,49 @@ void test_008()
 #endif
 }
 
+//#include <boost/property_tree/ptree.hpp>
+//#include <boost/property_tree/xml_parser.hpp>
+
+void test_009()
+{
+	TBlock cplx_b("container");
+	data_type vector_10[10] = {0};
+	data_type vector_4[4] = {0};
+	TDataVector Vector10(vector_10, 10);
+	TDataVector Vector4(vector_4, 4);
+
+	// Create empty property tree object
+	using boost::property_tree::ptree;
+	ptree pt;
+
+	TKohonen kohonen("kohonen", "k_in", "k_out", Vector10, Vector4, 0.01, 0.02);
+
+	int t;
+	int vector_size = 10;
+	TReaderFromOctMatrix matr_reader("reader", "data/kohonen_in.txt", 0, Vector10, "k_in");
+	TWriterToOctMatrix matr_writer("writer", "data/kohonen_out.txt", Vector4, "k_out");
+
+	cplx_b.add_subblock(&matr_reader, "reader");
+	cplx_b.add_subblock(&matr_writer, "writer");
+	cplx_b.add_subblock(&kohonen, "kohonen");
+
+	cplx_b.connect_subblock("reader", ACT_ONE_ONE_PIPELINE);
+	cplx_b.connect_subblock("kohonen", ACT_ONE_ONE_PIPELINE);
+#if 1
+	read_xml("kohonen.xml", pt);
+	kohonen.load_from_ptree(pt, __func__);
+	for (t = 0; t < 100; t++)
+	{
+		matr_writer.simulate(t, 10, NULL, __func__);
+	}
+#endif
+	kohonen.save_to_ptree(pt, __func__);
+	// Write property tree to XML file
+	write_xml("kohonen.xml", pt);
+
+
+}
+
 void mainloop()
 {
 	test_001();
@@ -336,6 +380,7 @@ void mainloop()
 	test_006();
 	test_007();
 	test_008();
+	test_009();
 }
 
 int main(int argc, char * argv[])
